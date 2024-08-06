@@ -10,39 +10,65 @@ import SwiftUI
 struct MainView: View {
     // MARK: - Private Properties
 
-    @State var selectedTab: TabType
+    @State private var selectedTab: TabType
+
+    // MARK: - Private Properties
+
+    @State private var navigationManager: NavigationManager
+
+    // MARK: - Init
+
+    init(
+        selectedTab: TabType,
+        navigationManager: NavigationManager = NavigationManager()
+    ) {
+        self.selectedTab = selectedTab
+        self.navigationManager = navigationManager
+    }
 
     // MARK: - Body
 
     var body: some View {
         TabView(selection: $selectedTab) {
-            HomeView()
-                .tabItem {
-                    TabType.home.image
-                    Text(TabType.home.title)
-                }
-                .tag(TabType.home)
+            // Home Tab
+            NavigationStack(path: $navigationManager.homeNavigator.path) {
+                HomeView(navigator: navigationManager.homeNavigator)
+            }
+            .tabItem {
+                TabType.home.image
+                Text(TabType.home.title)
+            }
+            .tag(TabType.home)
 
-            SwapView()
-                .tabItem {
-                    TabType.swap.image
-                    Text(TabType.swap.title)
-                }
-                .tag(TabType.swap)
+            // Swap Tab
+            NavigationStack(path: $navigationManager.swapNavigator.path) {
+                SwapView()
+            }
+            .tabItem {
+                TabType.swap.image
+                Text(TabType.swap.title)
+            }
+            .tag(TabType.swap)
 
-            EarnView()
-                .tabItem {
-                    TabType.earn.image
-                    Text(TabType.earn.title)
-                }
-                .tag(TabType.earn)
+            // Earn Tab
+            NavigationStack(path: $navigationManager.earnNavigator.path) {
+                EarnView()
+            }
+            .tabItem {
+                TabType.earn.image
+                Text(TabType.earn.title)
+            }
+            .tag(TabType.earn)
 
-            DiscoverView()
-                .tabItem {
-                    TabType.discover.image
-                    Text(TabType.discover.title)
-                }
-                .tag(TabType.discover)
+            // Discover Tab
+            NavigationStack(path: $navigationManager.discoverNavigator.path) {
+                DiscoverView()
+            }
+            .tabItem {
+                TabType.discover.image
+                Text(TabType.discover.title)
+            }
+            .tag(TabType.discover)
         }
         .onChange(of: selectedTab) {
             print("selectedTab: \(selectedTab)")
