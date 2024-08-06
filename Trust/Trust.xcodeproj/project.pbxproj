@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3E8AEF142C61FEC5005D0B87 /* TrustApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AEF132C61FEC5005D0B87 /* TrustApp.swift */; };
-		3E8AEF162C61FEC5005D0B87 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AEF152C61FEC5005D0B87 /* ContentView.swift */; };
+		3E8AEF162C61FEC5005D0B87 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AEF152C61FEC5005D0B87 /* SplashScreenView.swift */; };
 		3E8AEF182C61FEC6005D0B87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E8AEF172C61FEC6005D0B87 /* Assets.xcassets */; };
 		3E8AEF1B2C61FEC6005D0B87 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E8AEF1A2C61FEC6005D0B87 /* Preview Assets.xcassets */; };
 		3E8AEF252C61FEC6005D0B87 /* TrustTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AEF242C61FEC6005D0B87 /* TrustTests.swift */; };
@@ -36,7 +36,7 @@
 /* Begin PBXFileReference section */
 		3E8AEF102C61FEC5005D0B87 /* Trust.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trust.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E8AEF132C61FEC5005D0B87 /* TrustApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrustApp.swift; sourceTree = "<group>"; };
-		3E8AEF152C61FEC5005D0B87 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3E8AEF152C61FEC5005D0B87 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		3E8AEF172C61FEC6005D0B87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E8AEF1A2C61FEC6005D0B87 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3E8AEF202C61FEC6005D0B87 /* TrustTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrustTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,7 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				3E8AEF132C61FEC5005D0B87 /* TrustApp.swift */,
-				3E8AEF152C61FEC5005D0B87 /* ContentView.swift */,
+				3E8AEF152C61FEC5005D0B87 /* SplashScreenView.swift */,
 				3E8AEF172C61FEC6005D0B87 /* Assets.xcassets */,
 				3E8AEF192C61FEC6005D0B87 /* Preview Content */,
 			);
@@ -257,7 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E8AEF162C61FEC5005D0B87 /* ContentView.swift in Sources */,
+				3E8AEF162C61FEC5005D0B87 /* SplashScreenView.swift in Sources */,
 				3E8AEF142C61FEC5005D0B87 /* TrustApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
