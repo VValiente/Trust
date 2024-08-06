@@ -214,8 +214,8 @@
 			children = (
 				3E8AEF662C621011005D0B87 /* HomeDestination.swift */,
 				3E8AEF4A2C620340005D0B87 /* HomeView.swift */,
-				3E8AEF7C2C621E0A005D0B87 /* WalletButton.swift */,
 				3E8AEF682C62103E005D0B87 /* Settings */,
+				3E8AEF802C6226E0005D0B87 /* Wallet */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -308,6 +308,16 @@
 				3E8AEF702C6213A1005D0B87 /* SettingsRowView.swift */,
 			);
 			path = SettingsRow;
+			sourceTree = "<group>";
+		};
+		3E8AEF802C6226E0005D0B87 /* Wallet */ = {
+			isa = PBXGroup;
+			children = (
+				3E8AEF7C2C621E0A005D0B87 /* WalletButton.swift */,
+				3E8AEF812C6226F8005D0B87 /* CreateWalletView.swift */,
+				3E8AEF832C622716005D0B87 /* AddWalletView.swift */,
+			);
+			path = Wallet;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -462,10 +472,12 @@
 				3E8AEF7D2C621E0A005D0B87 /* WalletButton.swift in Sources */,
 				3E8AEF672C621011005D0B87 /* HomeDestination.swift in Sources */,
 				3E8AEF632C620E32005D0B87 /* Navigator.swift in Sources */,
+				3E8AEF842C622716005D0B87 /* AddWalletView.swift in Sources */,
 				3E8AEF772C621998005D0B87 /* SettingsDestination.swift in Sources */,
 				3E8AEF542C620378005D0B87 /* DiscoverView.swift in Sources */,
 				3E8AEF652C620E57005D0B87 /* NavigationManager.swift in Sources */,
 				3E8AEF142C61FEC5005D0B87 /* TrustApp.swift in Sources */,
+				3E8AEF822C6226F8005D0B87 /* CreateWalletView.swift in Sources */,
 				3E8AEF4B2C620340005D0B87 /* HomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

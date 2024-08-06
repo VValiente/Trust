@@ -14,6 +14,9 @@ struct HomeView: View {
 
     // MARK: - Private Properties
 
+    @State private var showCreateWalletView = false
+    @State private var showAddWalletView = false
+
     private let title = LocalizedStringKey("homeView_title")
     private let earnPoints = LocalizedStringKey("wallet_earnPoints")
 
@@ -41,7 +44,10 @@ struct HomeView: View {
                     style: .create,
                     title: LocalizedStringKey("wallet_createButton_title"),
                     subtitle: LocalizedStringKey("wallet_createButton_subtitle"),
-                    tagTitle: earnPoints
+                    tagTitle: earnPoints,
+                    didTap: {
+                        showCreateWalletView = true
+                    }
                 )
 
                 // Add Wallet Button
@@ -49,7 +55,10 @@ struct HomeView: View {
                     style: .add,
                     title: LocalizedStringKey("wallet_addButton_title"),
                     subtitle: LocalizedStringKey("wallet_addButton_subtitle"),
-                    tagTitle: earnPoints
+                    tagTitle: earnPoints,
+                    didTap: {
+                        showAddWalletView = true
+                    }
                 )
             }
             .padding(.horizontal, .horizontalPadding)
@@ -62,6 +71,12 @@ struct HomeView: View {
                     Image(systemName: "gear")
                 }
             }
+        }
+        .sheet(isPresented: $showCreateWalletView) {
+            CreateWalletView()
+        }
+        .sheet(isPresented: $showAddWalletView) {
+            AddWalletView()
         }
         .navigationDestination(for: HomeDestination.self) { destination in
             switch destination {

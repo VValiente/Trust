@@ -14,6 +14,7 @@ struct WalletButton: View {
     var title: LocalizedStringKey
     var subtitle: LocalizedStringKey
     var tagTitle: LocalizedStringKey
+    var didTap: () -> Void
 
     enum Style {
         case create
@@ -35,7 +36,7 @@ struct WalletButton: View {
 
     var body: some View {
         Button {
-            //
+            didTap()
         } label: {
             HStack(spacing: 12) {
                 // Icon
@@ -89,7 +90,8 @@ struct WalletButton: View {
         style: .create,
         title: .placeholder,
         subtitle: .placeholder,
-        tagTitle: .placeholder
+        tagTitle: .placeholder,
+        didTap: {}
     )
     .padding()
 }

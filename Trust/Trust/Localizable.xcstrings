@@ -1,6 +1,26 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "addWalletView_navigationTitle" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add an existing wallet"
+          }
+        }
+      }
+    },
+    "createWalletView_navigationTitle" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Create a new wallet"
+          }
+        }
+      }
+    },
     "homeView_title" : {
       "localizations" : {
         "en" : {
