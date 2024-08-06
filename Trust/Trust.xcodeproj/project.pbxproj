@@ -14,7 +14,10 @@
 		3E8AEF252C61FEC6005D0B87 /* TrustTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AEF242C61FEC6005D0B87 /* TrustTests.swift */; };
 		3E8AEF2F2C61FEC6005D0B87 /* TrustUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AEF2E2C61FEC6005D0B87 /* TrustUITests.swift */; };
 		3E8AEF312C61FEC6005D0B87 /* TrustUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AEF302C61FEC6005D0B87 /* TrustUITestsLaunchTests.swift */; };
+		3E8AEF412C62019A005D0B87 /* RootViewContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AEF402C62019A005D0B87 /* RootViewContentManager.swift */; };
+		3E8AEF432C6201BB005D0B87 /* RootContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AEF422C6201BB005D0B87 /* RootContentType.swift */; };
 		3E8AEF462C6201E3005D0B87 /* TabType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AEF452C6201E3005D0B87 /* TabType.swift */; };
+		3E8AEF482C6202D1005D0B87 /* RootViewContentProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AEF472C6202D1005D0B87 /* RootViewContentProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +48,10 @@
 		3E8AEF2A2C61FEC6005D0B87 /* TrustUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrustUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E8AEF2E2C61FEC6005D0B87 /* TrustUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrustUITests.swift; sourceTree = "<group>"; };
 		3E8AEF302C61FEC6005D0B87 /* TrustUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrustUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3E8AEF402C62019A005D0B87 /* RootViewContentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewContentManager.swift; sourceTree = "<group>"; };
+		3E8AEF422C6201BB005D0B87 /* RootContentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootContentType.swift; sourceTree = "<group>"; };
 		3E8AEF452C6201E3005D0B87 /* TabType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabType.swift; sourceTree = "<group>"; };
+		3E8AEF472C6202D1005D0B87 /* RootViewContentProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewContentProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,11 +102,12 @@
 		3E8AEF122C61FEC5005D0B87 /* Trust */ = {
 			isa = PBXGroup;
 			children = (
-				3E8AEF132C61FEC5005D0B87 /* TrustApp.swift */,
 				3E8AEF152C61FEC5005D0B87 /* SplashScreenView.swift */,
+				3E8AEF132C61FEC5005D0B87 /* TrustApp.swift */,
 				3E8AEF172C61FEC6005D0B87 /* Assets.xcassets */,
 				3E8AEF442C6201D4005D0B87 /* Main */,
 				3E8AEF192C61FEC6005D0B87 /* Preview Content */,
+				3E8AEF3D2C620159005D0B87 /* RootView */,
 			);
 			path = Trust;
 			sourceTree = "<group>";
@@ -128,6 +135,16 @@
 				3E8AEF302C61FEC6005D0B87 /* TrustUITestsLaunchTests.swift */,
 			);
 			path = TrustUITests;
+			sourceTree = "<group>";
+		};
+		3E8AEF3D2C620159005D0B87 /* RootView */ = {
+			isa = PBXGroup;
+			children = (
+				3E8AEF422C6201BB005D0B87 /* RootContentType.swift */,
+				3E8AEF402C62019A005D0B87 /* RootViewContentManager.swift */,
+				3E8AEF472C6202D1005D0B87 /* RootViewContentProtocol.swift */,
+			);
+			path = RootView;
 			sourceTree = "<group>";
 		};
 		3E8AEF442C6201D4005D0B87 /* Main */ = {
@@ -268,8 +285,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E8AEF482C6202D1005D0B87 /* RootViewContentProtocol.swift in Sources */,
 				3E8AEF162C61FEC5005D0B87 /* SplashScreenView.swift in Sources */,
+				3E8AEF432C6201BB005D0B87 /* RootContentType.swift in Sources */,
 				3E8AEF462C6201E3005D0B87 /* TabType.swift in Sources */,
+				3E8AEF412C62019A005D0B87 /* RootViewContentManager.swift in Sources */,
 				3E8AEF142C61FEC5005D0B87 /* TrustApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
