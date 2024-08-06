@@ -12,11 +12,27 @@ struct HomeView: View {
 
     var navigator: Navigator
 
+    // MARK: - Private Properties
+
+    private let title = LocalizedStringKey("homeView_title")
+
     // MARK: - Body
 
     var body: some View {
-        VStack {
-            Text(verbatim: "Home")
+        ScrollView {
+            VStack(alignment: .center, spacing: 12) {
+                Image(systemName: "shield.lefthalf.filled")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 160, height: 160)
+                    .foregroundStyle(.tint)
+                    .padding()
+
+                Text(title)
+                    .font(.title2)
+                    .multilineTextAlignment(.center)
+                    .padding(.horizontal, .horizontalPadding)
+            }
         }
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
