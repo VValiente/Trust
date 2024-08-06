@@ -23,6 +23,8 @@
 		3E8AEF512C62036A005D0B87 /* SwapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AEF502C62036A005D0B87 /* SwapView.swift */; };
 		3E8AEF542C620378005D0B87 /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AEF532C620378005D0B87 /* DiscoverView.swift */; };
 		3E8AEF562C62039B005D0B87 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AEF552C62039B005D0B87 /* MainView.swift */; };
+		3E8AEF592C620455005D0B87 /* LauncherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AEF582C620455005D0B87 /* LauncherView.swift */; };
+		3E8AEF5C2C6204E7005D0B87 /* SplashScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AEF5B2C6204E7005D0B87 /* SplashScreenViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,8 @@
 		3E8AEF502C62036A005D0B87 /* SwapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapView.swift; sourceTree = "<group>"; };
 		3E8AEF532C620378005D0B87 /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
 		3E8AEF552C62039B005D0B87 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		3E8AEF582C620455005D0B87 /* LauncherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LauncherView.swift; sourceTree = "<group>"; };
+		3E8AEF5B2C6204E7005D0B87 /* SplashScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,12 +116,11 @@
 		3E8AEF122C61FEC5005D0B87 /* Trust */ = {
 			isa = PBXGroup;
 			children = (
-				3E8AEF152C61FEC5005D0B87 /* SplashScreenView.swift */,
 				3E8AEF132C61FEC5005D0B87 /* TrustApp.swift */,
 				3E8AEF172C61FEC6005D0B87 /* Assets.xcassets */,
+				3E8AEF572C62044C005D0B87 /* Launcher */,
 				3E8AEF442C6201D4005D0B87 /* Main */,
 				3E8AEF192C61FEC6005D0B87 /* Preview Content */,
-				3E8AEF3D2C620159005D0B87 /* RootView */,
 			);
 			path = Trust;
 			sourceTree = "<group>";
@@ -200,6 +203,25 @@
 				3E8AEF532C620378005D0B87 /* DiscoverView.swift */,
 			);
 			path = Discover;
+			sourceTree = "<group>";
+		};
+		3E8AEF572C62044C005D0B87 /* Launcher */ = {
+			isa = PBXGroup;
+			children = (
+				3E8AEF582C620455005D0B87 /* LauncherView.swift */,
+				3E8AEF3D2C620159005D0B87 /* RootView */,
+				3E8AEF5A2C6204DB005D0B87 /* SplashScreen */,
+			);
+			path = Launcher;
+			sourceTree = "<group>";
+		};
+		3E8AEF5A2C6204DB005D0B87 /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				3E8AEF152C61FEC5005D0B87 /* SplashScreenView.swift */,
+				3E8AEF5B2C6204E7005D0B87 /* SplashScreenViewModel.swift */,
+			);
+			path = SplashScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,7 +356,9 @@
 			files = (
 				3E8AEF482C6202D1005D0B87 /* RootViewContentProtocol.swift in Sources */,
 				3E8AEF162C61FEC5005D0B87 /* SplashScreenView.swift in Sources */,
+				3E8AEF592C620455005D0B87 /* LauncherView.swift in Sources */,
 				3E8AEF4E2C62035A005D0B87 /* EarnView.swift in Sources */,
+				3E8AEF5C2C6204E7005D0B87 /* SplashScreenViewModel.swift in Sources */,
 				3E8AEF432C6201BB005D0B87 /* RootContentType.swift in Sources */,
 				3E8AEF512C62036A005D0B87 /* SwapView.swift in Sources */,
 				3E8AEF462C6201E3005D0B87 /* TabType.swift in Sources */,

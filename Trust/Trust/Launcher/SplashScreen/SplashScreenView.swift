@@ -10,6 +10,7 @@ import SwiftUI
 struct SplashScreenView: View {
     // MARK: - Private Properties
 
+    @State private var viewModel = SplashScreenViewModel()
     @State private var isIconAnimating = false
 
     // MARK: - Body
@@ -22,6 +23,9 @@ struct SplashScreenView: View {
             .symbolEffect(.pulse, options: .repeating, value: isIconAnimating)
             .foregroundStyle(.tint)
             .padding()
+            .task {
+                viewModel.loadData()
+            }
             .onAppear {
                 isIconAnimating.toggle()
             }

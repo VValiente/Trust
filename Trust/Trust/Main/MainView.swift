@@ -8,10 +8,14 @@
 import SwiftUI
 
 struct MainView: View {
+    // MARK: - Private Properties
+
+    @State var selectedTab: TabType
+
     // MARK: - Body
 
     var body: some View {
-        TabView {
+        TabView(selection: $selectedTab) {
             HomeView()
                 .tabItem {
                     TabType.home.image
@@ -40,9 +44,12 @@ struct MainView: View {
                 }
                 .tag(TabType.discover)
         }
+        .onChange(of: selectedTab) {
+            print("selectedTab: \(selectedTab)")
+        }
     }
 }
 
 #Preview {
-    MainView()
+    MainView(selectedTab: .discover)
 }

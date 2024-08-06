@@ -11,7 +11,7 @@ import SwiftUI
 struct TrustApp: App {
     var body: some Scene {
         WindowGroup {
-            SplashScreenView()
+            LauncherView()
         }
     }
 }
