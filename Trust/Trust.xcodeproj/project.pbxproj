@@ -22,6 +22,7 @@
 		3E8AEF4E2C62035A005D0B87 /* EarnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AEF4D2C62035A005D0B87 /* EarnView.swift */; };
 		3E8AEF512C62036A005D0B87 /* SwapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AEF502C62036A005D0B87 /* SwapView.swift */; };
 		3E8AEF542C620378005D0B87 /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AEF532C620378005D0B87 /* DiscoverView.swift */; };
+		3E8AEF562C62039B005D0B87 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AEF552C62039B005D0B87 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		3E8AEF4D2C62035A005D0B87 /* EarnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarnView.swift; sourceTree = "<group>"; };
 		3E8AEF502C62036A005D0B87 /* SwapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapView.swift; sourceTree = "<group>"; };
 		3E8AEF532C620378005D0B87 /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
+		3E8AEF552C62039B005D0B87 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 		3E8AEF442C6201D4005D0B87 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				3E8AEF552C62039B005D0B87 /* MainView.swift */,
 				3E8AEF452C6201E3005D0B87 /* TabType.swift */,
 				3E8AEF522C620371005D0B87 /* Discover */,
 				3E8AEF4C2C620352005D0B87 /* Earn */,
@@ -336,6 +339,7 @@
 				3E8AEF512C62036A005D0B87 /* SwapView.swift in Sources */,
 				3E8AEF462C6201E3005D0B87 /* TabType.swift in Sources */,
 				3E8AEF412C62019A005D0B87 /* RootViewContentManager.swift in Sources */,
+				3E8AEF562C62039B005D0B87 /* MainView.swift in Sources */,
 				3E8AEF542C620378005D0B87 /* DiscoverView.swift in Sources */,
 				3E8AEF142C61FEC5005D0B87 /* TrustApp.swift in Sources */,
 				3E8AEF4B2C620340005D0B87 /* HomeView.swift in Sources */,
