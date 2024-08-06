@@ -25,6 +25,7 @@
 		3E8AEF562C62039B005D0B87 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AEF552C62039B005D0B87 /* MainView.swift */; };
 		3E8AEF592C620455005D0B87 /* LauncherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AEF582C620455005D0B87 /* LauncherView.swift */; };
 		3E8AEF5C2C6204E7005D0B87 /* SplashScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AEF5B2C6204E7005D0B87 /* SplashScreenViewModel.swift */; };
+		3E8AEF5E2C620790005D0B87 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 3E8AEF5D2C620790005D0B87 /* Localizable.xcstrings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		3E8AEF552C62039B005D0B87 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		3E8AEF582C620455005D0B87 /* LauncherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LauncherView.swift; sourceTree = "<group>"; };
 		3E8AEF5B2C6204E7005D0B87 /* SplashScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewModel.swift; sourceTree = "<group>"; };
+		3E8AEF5D2C620790005D0B87 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 			children = (
 				3E8AEF132C61FEC5005D0B87 /* TrustApp.swift */,
 				3E8AEF172C61FEC6005D0B87 /* Assets.xcassets */,
+				3E8AEF5D2C620790005D0B87 /* Localizable.xcstrings */,
 				3E8AEF572C62044C005D0B87 /* Launcher */,
 				3E8AEF442C6201D4005D0B87 /* Main */,
 				3E8AEF192C61FEC6005D0B87 /* Preview Content */,
@@ -330,6 +333,7 @@
 			files = (
 				3E8AEF1B2C61FEC6005D0B87 /* Preview Assets.xcassets in Resources */,
 				3E8AEF182C61FEC6005D0B87 /* Assets.xcassets in Resources */,
+				3E8AEF5E2C620790005D0B87 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
