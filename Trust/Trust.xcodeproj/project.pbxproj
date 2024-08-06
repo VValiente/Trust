@@ -26,6 +26,9 @@
 		3E8AEF592C620455005D0B87 /* LauncherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AEF582C620455005D0B87 /* LauncherView.swift */; };
 		3E8AEF5C2C6204E7005D0B87 /* SplashScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AEF5B2C6204E7005D0B87 /* SplashScreenViewModel.swift */; };
 		3E8AEF5E2C620790005D0B87 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 3E8AEF5D2C620790005D0B87 /* Localizable.xcstrings */; };
+		3E8AEF612C620E19005D0B87 /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AEF602C620E19005D0B87 /* Destination.swift */; };
+		3E8AEF632C620E32005D0B87 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AEF622C620E32005D0B87 /* Navigator.swift */; };
+		3E8AEF652C620E57005D0B87 /* NavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AEF642C620E57005D0B87 /* NavigationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +71,9 @@
 		3E8AEF582C620455005D0B87 /* LauncherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LauncherView.swift; sourceTree = "<group>"; };
 		3E8AEF5B2C6204E7005D0B87 /* SplashScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewModel.swift; sourceTree = "<group>"; };
 		3E8AEF5D2C620790005D0B87 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		3E8AEF602C620E19005D0B87 /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
+		3E8AEF622C620E32005D0B87 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		3E8AEF642C620E57005D0B87 /* NavigationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +129,7 @@
 				3E8AEF5D2C620790005D0B87 /* Localizable.xcstrings */,
 				3E8AEF572C62044C005D0B87 /* Launcher */,
 				3E8AEF442C6201D4005D0B87 /* Main */,
+				3E8AEF5F2C620E0A005D0B87 /* Navigation */,
 				3E8AEF192C61FEC6005D0B87 /* Preview Content */,
 			);
 			path = Trust;
@@ -167,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				3E8AEF552C62039B005D0B87 /* MainView.swift */,
+				3E8AEF642C620E57005D0B87 /* NavigationManager.swift */,
 				3E8AEF452C6201E3005D0B87 /* TabType.swift */,
 				3E8AEF522C620371005D0B87 /* Discover */,
 				3E8AEF4C2C620352005D0B87 /* Earn */,
@@ -225,6 +233,15 @@
 				3E8AEF5B2C6204E7005D0B87 /* SplashScreenViewModel.swift */,
 			);
 			path = SplashScreen;
+			sourceTree = "<group>";
+		};
+		3E8AEF5F2C620E0A005D0B87 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				3E8AEF602C620E19005D0B87 /* Destination.swift */,
+				3E8AEF622C620E32005D0B87 /* Navigator.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -364,11 +381,14 @@
 				3E8AEF4E2C62035A005D0B87 /* EarnView.swift in Sources */,
 				3E8AEF5C2C6204E7005D0B87 /* SplashScreenViewModel.swift in Sources */,
 				3E8AEF432C6201BB005D0B87 /* RootContentType.swift in Sources */,
+				3E8AEF612C620E19005D0B87 /* Destination.swift in Sources */,
 				3E8AEF512C62036A005D0B87 /* SwapView.swift in Sources */,
 				3E8AEF462C6201E3005D0B87 /* TabType.swift in Sources */,
 				3E8AEF412C62019A005D0B87 /* RootViewContentManager.swift in Sources */,
 				3E8AEF562C62039B005D0B87 /* MainView.swift in Sources */,
+				3E8AEF632C620E32005D0B87 /* Navigator.swift in Sources */,
 				3E8AEF542C620378005D0B87 /* DiscoverView.swift in Sources */,
+				3E8AEF652C620E57005D0B87 /* NavigationManager.swift in Sources */,
 				3E8AEF142C61FEC5005D0B87 /* TrustApp.swift in Sources */,
 				3E8AEF4B2C620340005D0B87 /* HomeView.swift in Sources */,
 			);
