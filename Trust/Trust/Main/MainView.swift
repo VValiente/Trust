@@ -32,7 +32,7 @@ struct MainView: View {
         TabView(selection: $selectedTab) {
             // Home Tab
             NavigationStack(path: $navigationManager.homeNavigator.path) {
-                HomeView()
+                HomeView(navigator: navigationManager.homeNavigator)
             }
             .tabItem {
                 TabType.home.image
