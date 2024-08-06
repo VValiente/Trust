@@ -72,11 +72,33 @@ struct HomeView: View {
             .listRowInsets(.zero)
 
             // List of Popular Tokens
-            Section {} header: {
+            Section {
+                PopularTokenRowView(
+                    imageURL: nil,
+                    title: "BTC",
+                    subtitle: "Bitcoin",
+                    price: "$55,735.00",
+                    priceChange: 9.43,
+                    didTap: {
+                        print("1")
+                    }
+                )
+
+                PopularTokenRowView(
+                    imageURL: nil,
+                    title: "BTC",
+                    subtitle: "Bitcoin",
+                    price: "$55,735.00",
+                    priceChange: -9.43,
+                    didTap: {
+                        print("2")
+                    }
+                )
+            } header: {
                 Text(LocalizedStringKey("homeView_popularTokens_sectionTitle"))
                     .font(.title3)
                     .textCase(.none)
-                    .padding(.top, .contentPadding)
+                    .padding(.vertical, .contentPadding)
             }
             .listRowSeparator(.hidden)
             .listRowBackground(Color.clear)
@@ -93,10 +115,14 @@ struct HomeView: View {
                 }
             }
         }
-        .sheet(isPresented: $showCreateWalletView) {
+        .sheet(isPresented: $showCreateWalletView, onDismiss: {
+            showCreateWalletView = false
+        }) {
             CreateWalletView()
         }
-        .sheet(isPresented: $showAddWalletView) {
+        .sheet(isPresented: $showAddWalletView, onDismiss: {
+            showAddWalletView = false
+        }) {
             AddWalletView()
         }
         .navigationDestination(for: HomeDestination.self) { destination in

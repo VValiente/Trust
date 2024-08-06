@@ -8,6 +8,7 @@
 import SwiftUI
 
 extension CGFloat {
+    static let rowItemVerticalPadding: CGFloat = 12.0
     static let contentPadding: CGFloat = 20.0
     static let horizontalPadding: CGFloat = 16.0
 }
