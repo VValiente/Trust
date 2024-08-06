@@ -15,12 +15,14 @@ struct HomeView: View {
     // MARK: - Private Properties
 
     private let title = LocalizedStringKey("homeView_title")
+    private let earnPoints = LocalizedStringKey("wallet_earnPoints")
 
     // MARK: - Body
 
     var body: some View {
         ScrollView {
-            VStack(alignment: .center, spacing: 12) {
+            VStack(alignment: .center, spacing: .contentPadding) {
+                // Image
                 Image(systemName: "shield.lefthalf.filled")
                     .resizable()
                     .scaledToFit()
@@ -28,11 +30,29 @@ struct HomeView: View {
                     .foregroundStyle(.tint)
                     .padding()
 
+                // Title
                 Text(title)
                     .font(.title2)
+                    .fontWeight(.semibold)
                     .multilineTextAlignment(.center)
-                    .padding(.horizontal, .horizontalPadding)
+
+                // Create Wallet Button
+                WalletButton(
+                    style: .create,
+                    title: LocalizedStringKey("wallet_createButton_title"),
+                    subtitle: LocalizedStringKey("wallet_createButton_subtitle"),
+                    tagTitle: earnPoints
+                )
+
+                // Add Wallet Button
+                WalletButton(
+                    style: .add,
+                    title: LocalizedStringKey("wallet_addButton_title"),
+                    subtitle: LocalizedStringKey("wallet_addButton_subtitle"),
+                    tagTitle: earnPoints
+                )
             }
+            .padding(.horizontal, .horizontalPadding)
         }
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {

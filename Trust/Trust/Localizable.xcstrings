@@ -90,6 +90,56 @@
           }
         }
       }
+    },
+    "wallet_addButton_subtitle" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Import, restore or view-only"
+          }
+        }
+      }
+    },
+    "wallet_addButton_title" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add existing wallet"
+          }
+        }
+      }
+    },
+    "wallet_createButton_subtitle" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Secret phrase or Swift wallet"
+          }
+        }
+      }
+    },
+    "wallet_createButton_title" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Create a new wallet"
+          }
+        }
+      }
+    },
+    "wallet_earnPoints" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Earn points"
+          }
+        }
+      }
     }
   },
   "version" : "1.0"
