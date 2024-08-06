@@ -41,6 +41,7 @@
 		3E8AEF7D2C621E0A005D0B87 /* WalletButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AEF7C2C621E0A005D0B87 /* WalletButton.swift */; };
 		3E8AEF822C6226F8005D0B87 /* CreateWalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AEF812C6226F8005D0B87 /* CreateWalletView.swift */; };
 		3E8AEF842C622716005D0B87 /* AddWalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AEF832C622716005D0B87 /* AddWalletView.swift */; };
+		3E9972BE2C62404800B9C058 /* EdgeInsets+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9972BD2C62404800B9C058 /* EdgeInsets+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +99,7 @@
 		3E8AEF7C2C621E0A005D0B87 /* WalletButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletButton.swift; sourceTree = "<group>"; };
 		3E8AEF812C6226F8005D0B87 /* CreateWalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWalletView.swift; sourceTree = "<group>"; };
 		3E8AEF832C622716005D0B87 /* AddWalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWalletView.swift; sourceTree = "<group>"; };
+		3E9972BD2C62404800B9C058 /* EdgeInsets+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EdgeInsets+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -296,6 +298,7 @@
 			isa = PBXGroup;
 			children = (
 				3E8AEF7A2C621DA5005D0B87 /* CGFloat+Extensions.swift */,
+				3E9972BD2C62404800B9C058 /* EdgeInsets+Extensions.swift */,
 				3E8AEF722C6213F9005D0B87 /* LocalizedStringKey+Extensions.swift */,
 				3E8AEF6D2C621284005D0B87 /* UINavigationController+Extensions.swift */,
 			);
@@ -467,6 +470,7 @@
 				3E8AEF462C6201E3005D0B87 /* TabType.swift in Sources */,
 				3E8AEF792C6219C0005D0B87 /* PreferencesView.swift in Sources */,
 				3E8AEF412C62019A005D0B87 /* RootViewContentManager.swift in Sources */,
+				3E9972BE2C62404800B9C058 /* EdgeInsets+Extensions.swift in Sources */,
 				3E8AEF712C6213A1005D0B87 /* SettingsRowView.swift in Sources */,
 				3E8AEF562C62039B005D0B87 /* MainView.swift in Sources */,
 				3E8AEF7D2C621E0A005D0B87 /* WalletButton.swift in Sources */,

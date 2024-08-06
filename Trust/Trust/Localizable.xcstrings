@@ -21,6 +21,16 @@
         }
       }
     },
+    "homeView_popularTokens_sectionTitle" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Popular tokens"
+          }
+        }
+      }
+    },
     "homeView_title" : {
       "localizations" : {
         "en" : {

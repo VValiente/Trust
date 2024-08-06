@@ -23,22 +23,8 @@ struct HomeView: View {
     // MARK: - Body
 
     var body: some View {
-        ScrollView {
-            VStack(alignment: .center, spacing: .contentPadding) {
-                // Image
-                Image(systemName: "shield.lefthalf.filled")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 160, height: 160)
-                    .foregroundStyle(.tint)
-                    .padding()
-
-                // Title
-                Text(title)
-                    .font(.title2)
-                    .fontWeight(.semibold)
-                    .multilineTextAlignment(.center)
-
+        List {
+            Section {
                 // Create Wallet Button
                 WalletButton(
                     style: .create,
@@ -49,6 +35,7 @@ struct HomeView: View {
                         showCreateWalletView = true
                     }
                 )
+                .padding(.vertical, .contentPadding)
 
                 // Add Wallet Button
                 WalletButton(
@@ -60,9 +47,43 @@ struct HomeView: View {
                         showAddWalletView = true
                     }
                 )
+            } header: {
+                VStack(alignment: .center, spacing: 28) {
+                    // Image
+                    Image(systemName: "shield.lefthalf.filled")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 160, height: 160)
+                        .foregroundStyle(.tint)
+                        .padding()
+
+                    // Title
+                    Text(title)
+                        .font(.title2)
+                        .fontWeight(.semibold)
+                        .multilineTextAlignment(.center)
+                        .textCase(.none)
+                        .foregroundStyle(Color.primary)
+                        .frame(maxWidth: .infinity, alignment: .center)
+                }
             }
-            .padding(.horizontal, .horizontalPadding)
+            .listRowSeparator(.hidden)
+            .listRowBackground(Color.clear)
+            .listRowInsets(.zero)
+
+            // List of Popular Tokens
+            Section {} header: {
+                Text(LocalizedStringKey("homeView_popularTokens_sectionTitle"))
+                    .font(.title3)
+                    .textCase(.none)
+                    .padding(.top, .contentPadding)
+            }
+            .listRowSeparator(.hidden)
+            .listRowBackground(Color.clear)
+            .listRowInsets(Constants.listRowInsets)
         }
+        .scrollIndicators(.hidden)
+        .scrollContentBackground(.hidden)
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
                 Button {
