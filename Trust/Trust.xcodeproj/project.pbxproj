@@ -32,6 +32,11 @@
 		3E8AEF672C621011005D0B87 /* HomeDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AEF662C621011005D0B87 /* HomeDestination.swift */; };
 		3E8AEF6A2C621048005D0B87 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AEF692C621048005D0B87 /* SettingsView.swift */; };
 		3E8AEF6E2C621284005D0B87 /* UINavigationController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AEF6D2C621284005D0B87 /* UINavigationController+Extensions.swift */; };
+		3E8AEF712C6213A1005D0B87 /* SettingsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AEF702C6213A1005D0B87 /* SettingsRowView.swift */; };
+		3E8AEF732C6213F9005D0B87 /* LocalizedStringKey+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AEF722C6213F9005D0B87 /* LocalizedStringKey+Extensions.swift */; };
+		3E8AEF752C621855005D0B87 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AEF742C621855005D0B87 /* Constants.swift */; };
+		3E8AEF772C621998005D0B87 /* SettingsDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AEF762C621998005D0B87 /* SettingsDestination.swift */; };
+		3E8AEF792C6219C0005D0B87 /* PreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AEF782C6219C0005D0B87 /* PreferencesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +85,11 @@
 		3E8AEF662C621011005D0B87 /* HomeDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDestination.swift; sourceTree = "<group>"; };
 		3E8AEF692C621048005D0B87 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		3E8AEF6D2C621284005D0B87 /* UINavigationController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extensions.swift"; sourceTree = "<group>"; };
+		3E8AEF702C6213A1005D0B87 /* SettingsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRowView.swift; sourceTree = "<group>"; };
+		3E8AEF722C6213F9005D0B87 /* LocalizedStringKey+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocalizedStringKey+Extensions.swift"; sourceTree = "<group>"; };
+		3E8AEF742C621855005D0B87 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3E8AEF762C621998005D0B87 /* SettingsDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsDestination.swift; sourceTree = "<group>"; };
+		3E8AEF782C6219C0005D0B87 /* PreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -256,7 +266,10 @@
 		3E8AEF682C62103E005D0B87 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				3E8AEF782C6219C0005D0B87 /* PreferencesView.swift */,
+				3E8AEF762C621998005D0B87 /* SettingsDestination.swift */,
 				3E8AEF692C621048005D0B87 /* SettingsView.swift */,
+				3E8AEF6F2C621394005D0B87 /* SettingsRow */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -264,6 +277,7 @@
 		3E8AEF6B2C62126E005D0B87 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				3E8AEF742C621855005D0B87 /* Constants.swift */,
 				3E8AEF6C2C621272005D0B87 /* Extensions */,
 			);
 			path = Utils;
@@ -272,9 +286,18 @@
 		3E8AEF6C2C621272005D0B87 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				3E8AEF722C6213F9005D0B87 /* LocalizedStringKey+Extensions.swift */,
 				3E8AEF6D2C621284005D0B87 /* UINavigationController+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3E8AEF6F2C621394005D0B87 /* SettingsRow */ = {
+			isa = PBXGroup;
+			children = (
+				3E8AEF702C6213A1005D0B87 /* SettingsRowView.swift */,
+			);
+			path = SettingsRow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -409,20 +432,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E8AEF482C6202D1005D0B87 /* RootViewContentProtocol.swift in Sources */,
+				3E8AEF752C621855005D0B87 /* Constants.swift in Sources */,
 				3E8AEF6E2C621284005D0B87 /* UINavigationController+Extensions.swift in Sources */,
 				3E8AEF162C61FEC5005D0B87 /* SplashScreenView.swift in Sources */,
 				3E8AEF592C620455005D0B87 /* LauncherView.swift in Sources */,
 				3E8AEF6A2C621048005D0B87 /* SettingsView.swift in Sources */,
+				3E8AEF732C6213F9005D0B87 /* LocalizedStringKey+Extensions.swift in Sources */,
 				3E8AEF4E2C62035A005D0B87 /* EarnView.swift in Sources */,
 				3E8AEF5C2C6204E7005D0B87 /* SplashScreenViewModel.swift in Sources */,
 				3E8AEF432C6201BB005D0B87 /* RootContentType.swift in Sources */,
 				3E8AEF612C620E19005D0B87 /* Destination.swift in Sources */,
 				3E8AEF512C62036A005D0B87 /* SwapView.swift in Sources */,
 				3E8AEF462C6201E3005D0B87 /* TabType.swift in Sources */,
+				3E8AEF792C6219C0005D0B87 /* PreferencesView.swift in Sources */,
 				3E8AEF412C62019A005D0B87 /* RootViewContentManager.swift in Sources */,
+				3E8AEF712C6213A1005D0B87 /* SettingsRowView.swift in Sources */,
 				3E8AEF562C62039B005D0B87 /* MainView.swift in Sources */,
 				3E8AEF672C621011005D0B87 /* HomeDestination.swift in Sources */,
 				3E8AEF632C620E32005D0B87 /* Navigator.swift in Sources */,
+				3E8AEF772C621998005D0B87 /* SettingsDestination.swift in Sources */,
 				3E8AEF542C620378005D0B87 /* DiscoverView.swift in Sources */,
 				3E8AEF652C620E57005D0B87 /* NavigationManager.swift in Sources */,
 				3E8AEF142C61FEC5005D0B87 /* TrustApp.swift in Sources */,

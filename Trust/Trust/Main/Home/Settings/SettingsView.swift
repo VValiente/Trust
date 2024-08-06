@@ -20,7 +20,25 @@ struct SettingsView: View {
 
     var body: some View {
         VStack {
-            Text(verbatim: "Settings")
+            List {
+                Section {
+                    SettingsRowView(title: LocalizedStringKey("settingsView_preferences_title"), iconName: "gear") {
+                        navigator.navigate(to: SettingsDestination.preferences)
+                    }
+                } footer: {
+                    // Hairline
+                    Rectangle()
+                        .stroke(Color.secondary.opacity(0.2), lineWidth: 0.5)
+                        .frame(height: 0.5)
+                }
+                .listRowSeparator(.hidden)
+                .listRowBackground(Color.clear)
+                .listRowInsets(Constants.listRowInsets)
+                .listRowSeparator(.hidden)
+            }
+            .listStyle(.grouped)
+            .scrollIndicators(.hidden)
+            .scrollContentBackground(.hidden)
         }
         .navigationBarBackButtonHidden()
         .navigationTitle(navigationTitle)
@@ -31,6 +49,12 @@ struct SettingsView: View {
                 } label: {
                     Image(systemName: "arrow.left")
                 }
+            }
+        }
+        .navigationDestination(for: SettingsDestination.self) { destination in
+            switch destination {
+                case .preferences:
+                    PreferencesView(navigator: navigator)
             }
         }
     }
