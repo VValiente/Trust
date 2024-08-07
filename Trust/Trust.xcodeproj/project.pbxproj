@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3E658C0A2C633C0D00CADF0E /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E658C092C633C0D00CADF0E /* NetworkError.swift */; };
+		3E658C0D2C6343D100CADF0E /* CryptoDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E658C0C2C6343D100CADF0E /* CryptoDTO.swift */; };
 		3E8AEF142C61FEC5005D0B87 /* TrustApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AEF132C61FEC5005D0B87 /* TrustApp.swift */; };
 		3E8AEF162C61FEC5005D0B87 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AEF152C61FEC5005D0B87 /* SplashScreenView.swift */; };
 		3E8AEF182C61FEC6005D0B87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E8AEF172C61FEC6005D0B87 /* Assets.xcassets */; };
@@ -66,6 +67,7 @@
 
 /* Begin PBXFileReference section */
 		3E658C092C633C0D00CADF0E /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		3E658C0C2C6343D100CADF0E /* CryptoDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoDTO.swift; sourceTree = "<group>"; };
 		3E8AEF102C61FEC5005D0B87 /* Trust.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trust.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E8AEF132C61FEC5005D0B87 /* TrustApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrustApp.swift; sourceTree = "<group>"; };
 		3E8AEF152C61FEC5005D0B87 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
@@ -137,8 +139,17 @@
 			isa = PBXGroup;
 			children = (
 				3E658C092C633C0D00CADF0E /* NetworkError.swift */,
+				3E658C0B2C6343C000CADF0E /* Crypto */,
 			);
 			path = Backend;
+			sourceTree = "<group>";
+		};
+		3E658C0B2C6343C000CADF0E /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				3E658C0C2C6343D100CADF0E /* CryptoDTO.swift */,
+			);
+			path = Crypto;
 			sourceTree = "<group>";
 		};
 		3E8AEF072C61FEC5005D0B87 = {
@@ -483,6 +494,7 @@
 				3E8AEF752C621855005D0B87 /* Constants.swift in Sources */,
 				3E8AEF6E2C621284005D0B87 /* UINavigationController+Extensions.swift in Sources */,
 				3E8AEF162C61FEC5005D0B87 /* SplashScreenView.swift in Sources */,
+				3E658C0D2C6343D100CADF0E /* CryptoDTO.swift in Sources */,
 				3E8AEF592C620455005D0B87 /* LauncherView.swift in Sources */,
 				3E8AEF6A2C621048005D0B87 /* SettingsView.swift in Sources */,
 				3E8AEF7B2C621DA5005D0B87 /* CGFloat+Extensions.swift in Sources */,
