@@ -76,10 +76,9 @@ struct HomeView: View {
             Section {
                 if case let .success(popularTokens) = viewModel.popularTokensRequestState {
                     ForEach(popularTokens, id: \.self) { tokenViewData in
-                        PopularTokenRowView(
-                            viewData: tokenViewData) {
-                                // Handle taps on row
-                            }
+                        PopularTokenRowView(viewData: tokenViewData) {
+                            navigator.navigate(to: HomeDestination.popularToken(tokenViewData.id))
+                        }
                     }
                 }
 
@@ -118,6 +117,8 @@ struct HomeView: View {
             switch destination {
                 case .settings:
                     SettingsView(navigator: navigator)
+                case let .popularToken(tokenID):
+                    PopularTokenDetailView(tokenID: tokenID)
             }
         }
         .task {

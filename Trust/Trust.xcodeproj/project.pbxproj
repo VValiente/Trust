@@ -19,6 +19,16 @@
 		3E658C2D2C63769400CADF0E /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E658C2C2C63769400CADF0E /* ImageCache.swift */; };
 		3E658C2F2C63772500CADF0E /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E658C2E2C63772500CADF0E /* ImageLoader.swift */; };
 		3E658C312C6377B100CADF0E /* ImageError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E658C302C6377B100CADF0E /* ImageError.swift */; };
+		3E658C342C637FC300CADF0E /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E658C332C637FC300CADF0E /* AppState.swift */; };
+		3E658C362C63804100CADF0E /* TopCryptoStateDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E658C352C63804100CADF0E /* TopCryptoStateDelegate.swift */; };
+		3E658C392C6381E500CADF0E /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E658C382C6381E500CADF0E /* HomeViewModelTests.swift */; };
+		3E658C3B2C63834900CADF0E /* MockBackendService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E658C3A2C63834900CADF0E /* MockBackendService.swift */; };
+		3E658C3D2C6384B800CADF0E /* MockTopCryptoState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E658C3C2C6384B800CADF0E /* MockTopCryptoState.swift */; };
+		3E658C402C63851B00CADF0E /* CryptoDTO+TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E658C3F2C63851B00CADF0E /* CryptoDTO+TestData.swift */; };
+		3E658C422C63B90C00CADF0E /* DataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E658C412C63B90C00CADF0E /* DataParser.swift */; };
+		3E658C442C63BBE600CADF0E /* ContinuousObservationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E658C432C63BBE600CADF0E /* ContinuousObservationHelper.swift */; };
+		3E658C472C63C01900CADF0E /* PopularTokenDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E658C462C63C01900CADF0E /* PopularTokenDetailView.swift */; };
+		3E658C492C63C0D300CADF0E /* PopularTokenDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E658C482C63C0D300CADF0E /* PopularTokenDetailViewModel.swift */; };
 		3E8AEF142C61FEC5005D0B87 /* TrustApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AEF132C61FEC5005D0B87 /* TrustApp.swift */; };
 		3E8AEF162C61FEC5005D0B87 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AEF152C61FEC5005D0B87 /* SplashScreenView.swift */; };
 		3E8AEF182C61FEC6005D0B87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E8AEF172C61FEC6005D0B87 /* Assets.xcassets */; };
@@ -88,6 +98,16 @@
 		3E658C2C2C63769400CADF0E /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		3E658C2E2C63772500CADF0E /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		3E658C302C6377B100CADF0E /* ImageError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageError.swift; sourceTree = "<group>"; };
+		3E658C332C637FC300CADF0E /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		3E658C352C63804100CADF0E /* TopCryptoStateDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCryptoStateDelegate.swift; sourceTree = "<group>"; };
+		3E658C382C6381E500CADF0E /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
+		3E658C3A2C63834900CADF0E /* MockBackendService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MockBackendService.swift; path = TrustTests/MockBackendService.swift; sourceTree = SOURCE_ROOT; };
+		3E658C3C2C6384B800CADF0E /* MockTopCryptoState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTopCryptoState.swift; sourceTree = "<group>"; };
+		3E658C3F2C63851B00CADF0E /* CryptoDTO+TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CryptoDTO+TestData.swift"; sourceTree = "<group>"; };
+		3E658C412C63B90C00CADF0E /* DataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataParser.swift; sourceTree = "<group>"; };
+		3E658C432C63BBE600CADF0E /* ContinuousObservationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinuousObservationHelper.swift; sourceTree = "<group>"; };
+		3E658C462C63C01900CADF0E /* PopularTokenDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTokenDetailView.swift; sourceTree = "<group>"; };
+		3E658C482C63C0D300CADF0E /* PopularTokenDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTokenDetailViewModel.swift; sourceTree = "<group>"; };
 		3E8AEF102C61FEC5005D0B87 /* Trust.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trust.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E8AEF132C61FEC5005D0B87 /* TrustApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrustApp.swift; sourceTree = "<group>"; };
 		3E8AEF152C61FEC5005D0B87 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
@@ -203,6 +223,42 @@
 			path = ImageLoader;
 			sourceTree = "<group>";
 		};
+		3E658C322C637FB400CADF0E /* AppState */ = {
+			isa = PBXGroup;
+			children = (
+				3E658C332C637FC300CADF0E /* AppState.swift */,
+				3E658C352C63804100CADF0E /* TopCryptoStateDelegate.swift */,
+			);
+			path = AppState;
+			sourceTree = "<group>";
+		};
+		3E658C372C6381D300CADF0E /* Frontend */ = {
+			isa = PBXGroup;
+			children = (
+				3E658C382C6381E500CADF0E /* HomeViewModelTests.swift */,
+				3E658C3C2C6384B800CADF0E /* MockTopCryptoState.swift */,
+				3E658C3E2C63850700CADF0E /* TestData */,
+			);
+			path = Frontend;
+			sourceTree = "<group>";
+		};
+		3E658C3E2C63850700CADF0E /* TestData */ = {
+			isa = PBXGroup;
+			children = (
+				3E658C3F2C63851B00CADF0E /* CryptoDTO+TestData.swift */,
+			);
+			path = TestData;
+			sourceTree = "<group>";
+		};
+		3E658C452C63C00100CADF0E /* PopularTokenDetails */ = {
+			isa = PBXGroup;
+			children = (
+				3E658C462C63C01900CADF0E /* PopularTokenDetailView.swift */,
+				3E658C482C63C0D300CADF0E /* PopularTokenDetailViewModel.swift */,
+			);
+			path = PopularTokenDetails;
+			sourceTree = "<group>";
+		};
 		3E8AEF072C61FEC5005D0B87 = {
 			isa = PBXGroup;
 			children = (
@@ -229,6 +285,7 @@
 				3E8AEF132C61FEC5005D0B87 /* TrustApp.swift */,
 				3E8AEF172C61FEC6005D0B87 /* Assets.xcassets */,
 				3E8AEF5D2C620790005D0B87 /* Localizable.xcstrings */,
+				3E658C322C637FB400CADF0E /* AppState */,
 				3E658C062C63366900CADF0E /* Backend */,
 				3E658C192C6357C100CADF0E /* Frontend */,
 				3E8AEF192C61FEC6005D0B87 /* Preview Content */,
@@ -248,8 +305,11 @@
 		3E8AEF232C61FEC6005D0B87 /* TrustTests */ = {
 			isa = PBXGroup;
 			children = (
+				3E658C432C63BBE600CADF0E /* ContinuousObservationHelper.swift */,
+				3E658C3A2C63834900CADF0E /* MockBackendService.swift */,
 				3E8AEF242C61FEC6005D0B87 /* TrustTests.swift */,
 				3E658C1A2C63580200CADF0E /* Backend */,
+				3E658C372C6381D300CADF0E /* Frontend */,
 			);
 			path = TrustTests;
 			sourceTree = "<group>";
@@ -294,6 +354,7 @@
 				3E8AEF4A2C620340005D0B87 /* HomeView.swift */,
 				3E658C122C634B2500CADF0E /* HomeViewModel.swift */,
 				3E8AEF852C623343005D0B87 /* PopularToken */,
+				3E658C452C63C00100CADF0E /* PopularTokenDetails */,
 				3E8AEF682C62103E005D0B87 /* Settings */,
 				3E8AEF802C6226E0005D0B87 /* Wallet */,
 			);
@@ -367,6 +428,7 @@
 			isa = PBXGroup;
 			children = (
 				3E8AEF742C621855005D0B87 /* Constants.swift */,
+				3E658C412C63B90C00CADF0E /* DataParser.swift */,
 				3E658C292C63743600CADF0E /* PriceFormatter.swift */,
 				3E8AEF6C2C621272005D0B87 /* Extensions */,
 				3E658C2B2C63768600CADF0E /* ImageLoader */,
@@ -546,6 +608,7 @@
 			files = (
 				3E8AEF482C6202D1005D0B87 /* RootViewContentProtocol.swift in Sources */,
 				3E658C0F2C63463500CADF0E /* BackendServiceProtocol.swift in Sources */,
+				3E658C422C63B90C00CADF0E /* DataParser.swift in Sources */,
 				3E8AEF752C621855005D0B87 /* Constants.swift in Sources */,
 				3E8AEF6E2C621284005D0B87 /* UINavigationController+Extensions.swift in Sources */,
 				3E8AEF162C61FEC5005D0B87 /* SplashScreenView.swift in Sources */,
@@ -553,15 +616,18 @@
 				3E8AEF592C620455005D0B87 /* LauncherView.swift in Sources */,
 				3E8AEF6A2C621048005D0B87 /* SettingsView.swift in Sources */,
 				3E8AEF7B2C621DA5005D0B87 /* CGFloat+Extensions.swift in Sources */,
+				3E658C342C637FC300CADF0E /* AppState.swift in Sources */,
 				3E658C2A2C63743600CADF0E /* PriceFormatter.swift in Sources */,
 				3E658C262C6369B800CADF0E /* PopularTokenViewData.swift in Sources */,
 				3E8AEF732C6213F9005D0B87 /* LocalizedStringKey+Extensions.swift in Sources */,
 				3E658C082C6336A400CADF0E /* BackendService.swift in Sources */,
+				3E658C492C63C0D300CADF0E /* PopularTokenDetailViewModel.swift in Sources */,
 				3E658C0A2C633C0D00CADF0E /* NetworkError.swift in Sources */,
 				3E8AEF4E2C62035A005D0B87 /* EarnView.swift in Sources */,
 				3E8AEF5C2C6204E7005D0B87 /* SplashScreenViewModel.swift in Sources */,
 				3E8AEF432C6201BB005D0B87 /* RootContentType.swift in Sources */,
 				3E8AEF612C620E19005D0B87 /* Destination.swift in Sources */,
+				3E658C362C63804100CADF0E /* TopCryptoStateDelegate.swift in Sources */,
 				3E8AEF512C62036A005D0B87 /* SwapView.swift in Sources */,
 				3E658C312C6377B100CADF0E /* ImageError.swift in Sources */,
 				3E8AEF462C6201E3005D0B87 /* TabType.swift in Sources */,
@@ -583,6 +649,7 @@
 				3E8AEF142C61FEC5005D0B87 /* TrustApp.swift in Sources */,
 				3E8AEF872C62337A005D0B87 /* PopularTokenRowView.swift in Sources */,
 				3E8AEF822C6226F8005D0B87 /* CreateWalletView.swift in Sources */,
+				3E658C472C63C01900CADF0E /* PopularTokenDetailView.swift in Sources */,
 				3E8AEF4B2C620340005D0B87 /* HomeView.swift in Sources */,
 				3E8AEF892C6233F2005D0B87 /* PopularTokenRowViewModel.swift in Sources */,
 			);
@@ -593,7 +660,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E658C1E2C63585C00CADF0E /* BackendServiceTests.swift in Sources */,
+				3E658C392C6381E500CADF0E /* HomeViewModelTests.swift in Sources */,
+				3E658C3B2C63834900CADF0E /* MockBackendService.swift in Sources */,
+				3E658C402C63851B00CADF0E /* CryptoDTO+TestData.swift in Sources */,
 				3E8AEF252C61FEC6005D0B87 /* TrustTests.swift in Sources */,
+				3E658C442C63BBE600CADF0E /* ContinuousObservationHelper.swift in Sources */,
+				3E658C3D2C6384B800CADF0E /* MockTopCryptoState.swift in Sources */,
 				3E658C1C2C63582300CADF0E /* MockURLProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

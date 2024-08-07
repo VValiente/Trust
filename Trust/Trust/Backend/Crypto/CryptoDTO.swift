@@ -9,7 +9,7 @@ import SwiftUI
 
 // MARK: - CryptoDTO
 
-struct CryptoDTO: Identifiable {
+struct CryptoDTO: Identifiable, Equatable {
     let id: String
     let symbol: String
     let name: String
@@ -35,6 +35,60 @@ struct CryptoDTO: Identifiable {
     let atlChangePercentage: Double?
     let atlDate: String?
     let lastUpdated: String?
+
+    init(
+        id: String,
+        symbol: String,
+        name: String,
+        image: URL? = nil,
+        currentPrice: Double? = nil,
+        marketCap: Double? = nil,
+        marketCapRank: Int? = nil,
+        fullyDilutedValuation: Double? = nil,
+        totalVolume: Double? = nil,
+        high24h: Double? = nil,
+        low24h: Double? = nil,
+        priceChange24h: Double? = nil,
+        priceChangePercentage24h: Double? = nil,
+        marketCapChange24h: Double? = nil,
+        marketCapChangePercentage24h: Double? = nil,
+        circulatingSupply: Double? = nil,
+        totalSupply: Double? = nil,
+        maxSupply: Double? = nil,
+        ath: Double? = nil,
+        athChangePercentage: Double? = nil,
+        athDate: String? = nil,
+        atl: Double? = nil,
+        atlChangePercentage: Double? = nil,
+        atlDate: String? = nil,
+        lastUpdated: String? = nil
+    ) {
+        self.id = id
+        self.symbol = symbol
+        self.name = name
+        self.image = image
+        self.currentPrice = currentPrice
+        self.marketCap = marketCap
+        self.marketCapRank = marketCapRank
+        self.fullyDilutedValuation = fullyDilutedValuation
+        self.totalVolume = totalVolume
+        self.high24h = high24h
+        self.low24h = low24h
+        self.priceChange24h = priceChange24h
+        self.priceChangePercentage24h = priceChangePercentage24h
+        self.marketCapChange24h = marketCapChange24h
+        self.marketCapChangePercentage24h = marketCapChangePercentage24h
+        self.circulatingSupply = circulatingSupply
+        self.totalSupply = totalSupply
+        self.maxSupply = maxSupply
+        self.ath = ath
+        self.athChangePercentage = athChangePercentage
+        self.athDate = athDate
+        self.atl = atl
+        self.atlChangePercentage = atlChangePercentage
+        self.atlDate = atlDate
+        self.lastUpdated = lastUpdated
+    }
 }
 
 // MARK: Codable
