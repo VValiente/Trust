@@ -19,6 +19,8 @@
 		3E658C2D2C63769400CADF0E /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E658C2C2C63769400CADF0E /* ImageCache.swift */; };
 		3E658C2F2C63772500CADF0E /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E658C2E2C63772500CADF0E /* ImageLoader.swift */; };
 		3E658C312C6377B100CADF0E /* ImageError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E658C302C6377B100CADF0E /* ImageError.swift */; };
+		3E658C342C637FC300CADF0E /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E658C332C637FC300CADF0E /* AppState.swift */; };
+		3E658C362C63804100CADF0E /* TopCryptoStateDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E658C352C63804100CADF0E /* TopCryptoStateDelegate.swift */; };
 		3E8AEF142C61FEC5005D0B87 /* TrustApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AEF132C61FEC5005D0B87 /* TrustApp.swift */; };
 		3E8AEF162C61FEC5005D0B87 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AEF152C61FEC5005D0B87 /* SplashScreenView.swift */; };
 		3E8AEF182C61FEC6005D0B87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E8AEF172C61FEC6005D0B87 /* Assets.xcassets */; };
@@ -88,6 +90,8 @@
 		3E658C2C2C63769400CADF0E /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		3E658C2E2C63772500CADF0E /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		3E658C302C6377B100CADF0E /* ImageError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageError.swift; sourceTree = "<group>"; };
+		3E658C332C637FC300CADF0E /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		3E658C352C63804100CADF0E /* TopCryptoStateDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCryptoStateDelegate.swift; sourceTree = "<group>"; };
 		3E8AEF102C61FEC5005D0B87 /* Trust.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trust.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E8AEF132C61FEC5005D0B87 /* TrustApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrustApp.swift; sourceTree = "<group>"; };
 		3E8AEF152C61FEC5005D0B87 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
@@ -203,6 +207,15 @@
 			path = ImageLoader;
 			sourceTree = "<group>";
 		};
+		3E658C322C637FB400CADF0E /* AppState */ = {
+			isa = PBXGroup;
+			children = (
+				3E658C332C637FC300CADF0E /* AppState.swift */,
+				3E658C352C63804100CADF0E /* TopCryptoStateDelegate.swift */,
+			);
+			path = AppState;
+			sourceTree = "<group>";
+		};
 		3E8AEF072C61FEC5005D0B87 = {
 			isa = PBXGroup;
 			children = (
@@ -229,6 +242,7 @@
 				3E8AEF132C61FEC5005D0B87 /* TrustApp.swift */,
 				3E8AEF172C61FEC6005D0B87 /* Assets.xcassets */,
 				3E8AEF5D2C620790005D0B87 /* Localizable.xcstrings */,
+				3E658C322C637FB400CADF0E /* AppState */,
 				3E658C062C63366900CADF0E /* Backend */,
 				3E658C192C6357C100CADF0E /* Frontend */,
 				3E8AEF192C61FEC6005D0B87 /* Preview Content */,
@@ -553,6 +567,7 @@
 				3E8AEF592C620455005D0B87 /* LauncherView.swift in Sources */,
 				3E8AEF6A2C621048005D0B87 /* SettingsView.swift in Sources */,
 				3E8AEF7B2C621DA5005D0B87 /* CGFloat+Extensions.swift in Sources */,
+				3E658C342C637FC300CADF0E /* AppState.swift in Sources */,
 				3E658C2A2C63743600CADF0E /* PriceFormatter.swift in Sources */,
 				3E658C262C6369B800CADF0E /* PopularTokenViewData.swift in Sources */,
 				3E8AEF732C6213F9005D0B87 /* LocalizedStringKey+Extensions.swift in Sources */,
@@ -562,6 +577,7 @@
 				3E8AEF5C2C6204E7005D0B87 /* SplashScreenViewModel.swift in Sources */,
 				3E8AEF432C6201BB005D0B87 /* RootContentType.swift in Sources */,
 				3E8AEF612C620E19005D0B87 /* Destination.swift in Sources */,
+				3E658C362C63804100CADF0E /* TopCryptoStateDelegate.swift in Sources */,
 				3E8AEF512C62036A005D0B87 /* SwapView.swift in Sources */,
 				3E658C312C6377B100CADF0E /* ImageError.swift in Sources */,
 				3E8AEF462C6201E3005D0B87 /* TabType.swift in Sources */,
