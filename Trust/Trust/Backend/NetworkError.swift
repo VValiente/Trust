@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-enum NetworkError: Error {
+enum NetworkError: Error, Equatable {
     case badURL
     case requestFailed(description: String)
     case responseUnsuccessful(statusCode: Int)

@@ -11,6 +11,8 @@
 		3E658C0A2C633C0D00CADF0E /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E658C092C633C0D00CADF0E /* NetworkError.swift */; };
 		3E658C0D2C6343D100CADF0E /* CryptoDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E658C0C2C6343D100CADF0E /* CryptoDTO.swift */; };
 		3E658C0F2C63463500CADF0E /* BackendServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E658C0E2C63463500CADF0E /* BackendServiceProtocol.swift */; };
+		3E658C1C2C63582300CADF0E /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E658C1B2C63582300CADF0E /* MockURLProtocol.swift */; };
+		3E658C1E2C63585C00CADF0E /* BackendServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E658C1D2C63585C00CADF0E /* BackendServiceTests.swift */; };
 		3E8AEF142C61FEC5005D0B87 /* TrustApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AEF132C61FEC5005D0B87 /* TrustApp.swift */; };
 		3E8AEF162C61FEC5005D0B87 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AEF152C61FEC5005D0B87 /* SplashScreenView.swift */; };
 		3E8AEF182C61FEC6005D0B87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E8AEF172C61FEC6005D0B87 /* Assets.xcassets */; };
@@ -72,6 +74,8 @@
 		3E658C092C633C0D00CADF0E /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		3E658C0C2C6343D100CADF0E /* CryptoDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoDTO.swift; sourceTree = "<group>"; };
 		3E658C0E2C63463500CADF0E /* BackendServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendServiceProtocol.swift; sourceTree = "<group>"; };
+		3E658C1B2C63582300CADF0E /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
+		3E658C1D2C63585C00CADF0E /* BackendServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendServiceTests.swift; sourceTree = "<group>"; };
 		3E8AEF102C61FEC5005D0B87 /* Trust.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trust.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E8AEF132C61FEC5005D0B87 /* TrustApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrustApp.swift; sourceTree = "<group>"; };
 		3E8AEF152C61FEC5005D0B87 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
@@ -158,6 +162,15 @@
 			path = Crypto;
 			sourceTree = "<group>";
 		};
+		3E658C1A2C63580200CADF0E /* Backend */ = {
+			isa = PBXGroup;
+			children = (
+				3E658C1D2C63585C00CADF0E /* BackendServiceTests.swift */,
+				3E658C1B2C63582300CADF0E /* MockURLProtocol.swift */,
+			);
+			path = Backend;
+			sourceTree = "<group>";
+		};
 		3E8AEF072C61FEC5005D0B87 = {
 			isa = PBXGroup;
 			children = (
@@ -206,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				3E8AEF242C61FEC6005D0B87 /* TrustTests.swift */,
+				3E658C1A2C63580200CADF0E /* Backend */,
 			);
 			path = TrustTests;
 			sourceTree = "<group>";
@@ -538,7 +552,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E658C1E2C63585C00CADF0E /* BackendServiceTests.swift in Sources */,
 				3E8AEF252C61FEC6005D0B87 /* TrustTests.swift in Sources */,
+				3E658C1C2C63582300CADF0E /* MockURLProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

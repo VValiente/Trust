@@ -89,8 +89,13 @@ extension BackendService: BackendServiceProtocol {
             if
                 let httpResponse = response as? HTTPURLResponse,
                 200 ..< 300 ~= httpResponse.statusCode {
-                let topCryptos = try? JSONDecoder().decode([CryptoDTO].self, from: data)
-                return .success(topCryptos ?? [])
+                do {
+                    let topCryptos = try JSONDecoder().decode([CryptoDTO].self, from: data)
+                    return .success(topCryptos)
+
+                } catch {
+                    return .failure(.dataParsingFailed(description: error.localizedDescription))
+                }
 
             } else {
                 let statusCode = (response as? HTTPURLResponse)?.statusCode ?? -1
