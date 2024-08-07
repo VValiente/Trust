@@ -22,7 +22,6 @@ struct PopularTokenRowView: View {
     init(viewData: PopularTokenViewData, didTap: @escaping () -> Void) {
         self.viewData = viewData
         self.didTap = didTap
-        viewModel.loadIcon(from: viewData.imageURL)
     }
 
     // MARK: - Body
@@ -37,13 +36,21 @@ struct PopularTokenRowView: View {
                     switch viewModel.iconState {
                         case .idle,
                              .failure:
-                            ZStack {
-                                Image(systemName: "photo")
-                                    .font(.title2)
-                            }
+                            Image(systemName: "photo")
+                                .font(.title2)
+                                .padding(10)
+                                .background(
+                                    Circle()
+                                        .foregroundStyle(Color.blue.opacity(0.2))
+                                )
 
                         case .loading:
                             ProgressView()
+                                .padding(10)
+                                .background(
+                                    Circle()
+                                        .foregroundStyle(Color.blue.opacity(0.2))
+                                )
 
                         case let .success(image):
                             Image(uiImage: image)
@@ -51,13 +58,12 @@ struct PopularTokenRowView: View {
                                 .aspectRatio(contentMode: .fit)
                                 .frame(width: 40)
                                 .clipShape(Circle())
+                                .background(
+                                    Circle()
+                                        .stroke(Color.secondary.opacity(0.2), lineWidth: 1)
+                                )
                     }
                 }
-                .padding(10)
-                .background(
-                    Circle()
-                        .foregroundStyle(Color.blue.opacity(0.2))
-                )
 
                 // Token Name
                 VStack(alignment: .leading, spacing: 4) {
@@ -91,6 +97,9 @@ struct PopularTokenRowView: View {
             }
         }
         .padding(.vertical, .rowItemVerticalPadding)
+        .task {
+            viewModel.loadIcon(from: viewData.imageURL)
+        }
     }
 }
 
