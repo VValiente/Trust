@@ -10,6 +10,8 @@ import SwiftUI
 
 @Observable
 final class PopularTokenRowViewModel {
+    // MARK: - Public Properties
+
     var iconState: IconState = .idle
     enum IconState {
         case idle
@@ -17,6 +19,10 @@ final class PopularTokenRowViewModel {
         case success(UIImage)
         case failure
     }
+
+    // MARK: - Private Properties
+
+    private let imageLoader = ImageLoader()
 
     // MARK: - Public APIs
 
@@ -27,6 +33,15 @@ final class PopularTokenRowViewModel {
 
         iconState = .loading
 
-        // TODO:
+        Task {
+            let result = await imageLoader.loadImage(from: url)
+            switch result {
+                case let .success(uiImage):
+                    iconState = .success(uiImage)
+
+                case .failure:
+                    iconState = .failure
+            }
+        }
     }
 }
