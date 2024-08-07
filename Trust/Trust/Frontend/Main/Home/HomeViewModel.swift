@@ -12,7 +12,7 @@ final class HomeViewModel {
     // MARK: - Public Properties
 
     var popularTokensRequestState: RequestState = .idle
-    enum RequestState {
+    enum RequestState: Equatable {
         case idle
         case loading
         case success([PopularTokenViewData])
