@@ -41,6 +41,56 @@
         }
       }
     },
+    "networkError_badURL" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The URL provided was invalid."
+          }
+        }
+      }
+    },
+    "networkError_dataParsingFailed %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Failed to parse the data: %@"
+          }
+        }
+      }
+    },
+    "networkError_requestFailed %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The network request failed: %@"
+          }
+        }
+      }
+    },
+    "networkError_responseUnsuccessful %lld" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The network request was unsuccessful with status code: %lld"
+          }
+        }
+      }
+    },
+    "networkError_unknown" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "An unknown error occurred."
+          }
+        }
+      }
+    },
     "placeholder" : {
       "localizations" : {
         "en" : {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E658C0A2C633C0D00CADF0E /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E658C092C633C0D00CADF0E /* NetworkError.swift */; };
 		3E8AEF142C61FEC5005D0B87 /* TrustApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AEF132C61FEC5005D0B87 /* TrustApp.swift */; };
 		3E8AEF162C61FEC5005D0B87 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AEF152C61FEC5005D0B87 /* SplashScreenView.swift */; };
 		3E8AEF182C61FEC6005D0B87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E8AEF172C61FEC6005D0B87 /* Assets.xcassets */; };
@@ -64,6 +65,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3E658C092C633C0D00CADF0E /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		3E8AEF102C61FEC5005D0B87 /* Trust.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trust.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E8AEF132C61FEC5005D0B87 /* TrustApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrustApp.swift; sourceTree = "<group>"; };
 		3E8AEF152C61FEC5005D0B87 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
@@ -131,6 +133,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E658C062C63366900CADF0E /* Backend */ = {
+			isa = PBXGroup;
+			children = (
+				3E658C092C633C0D00CADF0E /* NetworkError.swift */,
+			);
+			path = Backend;
+			sourceTree = "<group>";
+		};
 		3E8AEF072C61FEC5005D0B87 = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +167,7 @@
 				3E8AEF132C61FEC5005D0B87 /* TrustApp.swift */,
 				3E8AEF172C61FEC6005D0B87 /* Assets.xcassets */,
 				3E8AEF5D2C620790005D0B87 /* Localizable.xcstrings */,
+				3E658C062C63366900CADF0E /* Backend */,
 				3E8AEF572C62044C005D0B87 /* Launcher */,
 				3E8AEF442C6201D4005D0B87 /* Main */,
 				3E8AEF5F2C620E0A005D0B87 /* Navigation */,
@@ -476,6 +487,7 @@
 				3E8AEF6A2C621048005D0B87 /* SettingsView.swift in Sources */,
 				3E8AEF7B2C621DA5005D0B87 /* CGFloat+Extensions.swift in Sources */,
 				3E8AEF732C6213F9005D0B87 /* LocalizedStringKey+Extensions.swift in Sources */,
+				3E658C0A2C633C0D00CADF0E /* NetworkError.swift in Sources */,
 				3E8AEF4E2C62035A005D0B87 /* EarnView.swift in Sources */,
 				3E8AEF5C2C6204E7005D0B87 /* SplashScreenViewModel.swift in Sources */,
 				3E8AEF432C6201BB005D0B87 /* RootContentType.swift in Sources */,
