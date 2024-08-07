@@ -173,6 +173,16 @@
 			path = Backend;
 			sourceTree = "<group>";
 		};
+		3E658C192C6357C100CADF0E /* Frontend */ = {
+			isa = PBXGroup;
+			children = (
+				3E8AEF572C62044C005D0B87 /* Launcher */,
+				3E8AEF442C6201D4005D0B87 /* Main */,
+				3E8AEF5F2C620E0A005D0B87 /* Navigation */,
+			);
+			path = Frontend;
+			sourceTree = "<group>";
+		};
 		3E8AEF072C61FEC5005D0B87 = {
 			isa = PBXGroup;
 			children = (
@@ -200,9 +210,7 @@
 				3E8AEF172C61FEC6005D0B87 /* Assets.xcassets */,
 				3E8AEF5D2C620790005D0B87 /* Localizable.xcstrings */,
 				3E658C062C63366900CADF0E /* Backend */,
-				3E8AEF572C62044C005D0B87 /* Launcher */,
-				3E8AEF442C6201D4005D0B87 /* Main */,
-				3E8AEF5F2C620E0A005D0B87 /* Navigation */,
+				3E658C192C6357C100CADF0E /* Frontend */,
 				3E8AEF192C61FEC6005D0B87 /* Preview Content */,
 				3E8AEF6B2C62126E005D0B87 /* Utils */,
 			);
