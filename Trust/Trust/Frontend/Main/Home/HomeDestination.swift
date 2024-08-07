@@ -9,4 +9,5 @@ import SwiftUI
 
 enum HomeDestination: Destination {
     case settings
+    case popularToken(String)
 }
