@@ -14,6 +14,7 @@
 		3E658C1C2C63582300CADF0E /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E658C1B2C63582300CADF0E /* MockURLProtocol.swift */; };
 		3E658C1E2C63585C00CADF0E /* BackendServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E658C1D2C63585C00CADF0E /* BackendServiceTests.swift */; };
 		3E658C132C634B2500CADF0E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E658C122C634B2500CADF0E /* HomeViewModel.swift */; };
+		3E658C2A2C63743600CADF0E /* PriceFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E658C292C63743600CADF0E /* PriceFormatter.swift */; };
 		3E8AEF142C61FEC5005D0B87 /* TrustApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AEF132C61FEC5005D0B87 /* TrustApp.swift */; };
 		3E8AEF162C61FEC5005D0B87 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AEF152C61FEC5005D0B87 /* SplashScreenView.swift */; };
 		3E8AEF182C61FEC6005D0B87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E8AEF172C61FEC6005D0B87 /* Assets.xcassets */; };
@@ -78,6 +79,7 @@
 		3E658C1B2C63582300CADF0E /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
 		3E658C1D2C63585C00CADF0E /* BackendServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendServiceTests.swift; sourceTree = "<group>"; };
 		3E658C122C634B2500CADF0E /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		3E658C292C63743600CADF0E /* PriceFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceFormatter.swift; sourceTree = "<group>"; };
 		3E8AEF102C61FEC5005D0B87 /* Trust.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trust.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E8AEF132C61FEC5005D0B87 /* TrustApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrustApp.swift; sourceTree = "<group>"; };
 		3E8AEF152C61FEC5005D0B87 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
@@ -347,6 +349,7 @@
 			isa = PBXGroup;
 			children = (
 				3E8AEF742C621855005D0B87 /* Constants.swift */,
+				3E658C292C63743600CADF0E /* PriceFormatter.swift */,
 				3E8AEF6C2C621272005D0B87 /* Extensions */,
 			);
 			path = Utils;
@@ -530,6 +533,7 @@
 				3E8AEF592C620455005D0B87 /* LauncherView.swift in Sources */,
 				3E8AEF6A2C621048005D0B87 /* SettingsView.swift in Sources */,
 				3E8AEF7B2C621DA5005D0B87 /* CGFloat+Extensions.swift in Sources */,
+				3E658C2A2C63743600CADF0E /* PriceFormatter.swift in Sources */,
 				3E8AEF732C6213F9005D0B87 /* LocalizedStringKey+Extensions.swift in Sources */,
 				3E658C082C6336A400CADF0E /* BackendService.swift in Sources */,
 				3E658C0A2C633C0D00CADF0E /* NetworkError.swift in Sources */,
