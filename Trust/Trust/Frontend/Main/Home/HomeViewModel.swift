@@ -47,15 +47,8 @@ final class HomeViewModel {
                     // Update the App State with the latest downloaded crypto.
                     topCrytoState.update(topCryptos: topCryptos)
 
-                    let popularTokens = topCryptos.map { crypto in
-                        PopularTokenViewData(
-                            id: crypto.id,
-                            imageURL: crypto.image,
-                            title: crypto.symbol.uppercased(),
-                            subtitle: crypto.name,
-                            price: displayCurrentPrice(from: "$", currentPrice: crypto.currentPrice),
-                            priceChange: displayPriceChange(from: crypto.priceChangePercentage24h)
-                        )
+                    let popularTokens = topCryptos.map { cryptoDTO in
+                        DataParser.parse(cryptoDTO: cryptoDTO, currencySymbol: "$")
                     }
                     popularTokensRequestState = .success(popularTokens)
 
@@ -64,23 +57,5 @@ final class HomeViewModel {
                     popularTokensRequestState = .failure
             }
         }
-    }
-
-    // MARK: - Private APIs
-
-    private func displayCurrentPrice(from currencySymbol: String, currentPrice: Double?) -> String {
-        guard let currentPrice else {
-            return ""
-        }
-
-        return PriceFormatter.shared.formatPrice(currentPrice, currencySymbol: currencySymbol)
-    }
-
-    private func displayPriceChange(from priceChangePercentage: Double?) -> Double {
-        guard let priceChangePercentage else {
-            return 0.0
-        }
-
-        return (priceChangePercentage * 100).rounded() / 100
     }
 }
