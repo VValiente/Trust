@@ -26,6 +26,7 @@
 		3E658C3D2C6384B800CADF0E /* MockTopCryptoState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E658C3C2C6384B800CADF0E /* MockTopCryptoState.swift */; };
 		3E658C402C63851B00CADF0E /* CryptoDTO+TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E658C3F2C63851B00CADF0E /* CryptoDTO+TestData.swift */; };
 		3E658C422C63B90C00CADF0E /* DataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E658C412C63B90C00CADF0E /* DataParser.swift */; };
+		3E658C442C63BBE600CADF0E /* ContinuousObservationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E658C432C63BBE600CADF0E /* ContinuousObservationHelper.swift */; };
 		3E8AEF142C61FEC5005D0B87 /* TrustApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AEF132C61FEC5005D0B87 /* TrustApp.swift */; };
 		3E8AEF162C61FEC5005D0B87 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AEF152C61FEC5005D0B87 /* SplashScreenView.swift */; };
 		3E8AEF182C61FEC6005D0B87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E8AEF172C61FEC6005D0B87 /* Assets.xcassets */; };
@@ -102,6 +103,7 @@
 		3E658C3C2C6384B800CADF0E /* MockTopCryptoState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTopCryptoState.swift; sourceTree = "<group>"; };
 		3E658C3F2C63851B00CADF0E /* CryptoDTO+TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CryptoDTO+TestData.swift"; sourceTree = "<group>"; };
 		3E658C412C63B90C00CADF0E /* DataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataParser.swift; sourceTree = "<group>"; };
+		3E658C432C63BBE600CADF0E /* ContinuousObservationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinuousObservationHelper.swift; sourceTree = "<group>"; };
 		3E8AEF102C61FEC5005D0B87 /* Trust.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trust.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E8AEF132C61FEC5005D0B87 /* TrustApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrustApp.swift; sourceTree = "<group>"; };
 		3E8AEF152C61FEC5005D0B87 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
@@ -290,6 +292,7 @@
 		3E8AEF232C61FEC6005D0B87 /* TrustTests */ = {
 			isa = PBXGroup;
 			children = (
+				3E658C432C63BBE600CADF0E /* ContinuousObservationHelper.swift */,
 				3E658C3A2C63834900CADF0E /* MockBackendService.swift */,
 				3E8AEF242C61FEC6005D0B87 /* TrustTests.swift */,
 				3E658C1A2C63580200CADF0E /* Backend */,
@@ -645,6 +648,7 @@
 				3E658C3B2C63834900CADF0E /* MockBackendService.swift in Sources */,
 				3E658C402C63851B00CADF0E /* CryptoDTO+TestData.swift in Sources */,
 				3E8AEF252C61FEC6005D0B87 /* TrustTests.swift in Sources */,
+				3E658C442C63BBE600CADF0E /* ContinuousObservationHelper.swift in Sources */,
 				3E658C3D2C6384B800CADF0E /* MockTopCryptoState.swift in Sources */,
 				3E658C1C2C63582300CADF0E /* MockURLProtocol.swift in Sources */,
 			);
