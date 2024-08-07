@@ -75,25 +75,27 @@ struct HomeView: View {
             // List of Popular Tokens
             Section {
                 PopularTokenRowView(
-                    imageURL: nil,
-                    title: "BTC",
-                    subtitle: "Bitcoin",
-                    price: "$55,735.00",
-                    priceChange: 9.43,
-                    didTap: {
-                        print("1")
-                    }
+                    viewData: PopularTokenViewData(
+                        id: "1",
+                        imageURL: nil,
+                        title: "BTC",
+                        subtitle: "Bitcoin",
+                        price: "$55,735.00",
+                        priceChange: -9.43
+                    ),
+                    didTap: {}
                 )
 
                 PopularTokenRowView(
-                    imageURL: nil,
-                    title: "BTC",
-                    subtitle: "Bitcoin",
-                    price: "$55,735.00",
-                    priceChange: -9.43,
-                    didTap: {
-                        print("2")
-                    }
+                    viewData: PopularTokenViewData(
+                        id: "1",
+                        imageURL: nil,
+                        title: "BTC",
+                        subtitle: "Bitcoin",
+                        price: "$55,735.00",
+                        priceChange: -9.43
+                    ),
+                    didTap: {}
                 )
             } header: {
                 Text(LocalizedStringKey("homeView_popularTokens_sectionTitle"))

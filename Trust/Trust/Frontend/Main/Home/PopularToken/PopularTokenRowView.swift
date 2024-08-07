@@ -10,16 +10,20 @@ import SwiftUI
 struct PopularTokenRowView: View {
     // MARK: - Public Properties
 
-    var imageURL: URL?
-    var title: String
-    var subtitle: String
-    var price: String
-    var priceChange: Double
+    var viewData: PopularTokenViewData
     var didTap: () -> Void
 
     // MARK: - Private Properties
 
     @State private var viewModel = PopularTokenRowViewModel()
+
+    // MARK: - Init
+
+    init(viewData: PopularTokenViewData, didTap: @escaping () -> Void) {
+        self.viewData = viewData
+        self.didTap = didTap
+        viewModel.loadIcon(from: viewData.imageURL)
+    }
 
     // MARK: - Body
 
@@ -57,7 +61,7 @@ struct PopularTokenRowView: View {
 
                 // Token Name
                 VStack(alignment: .leading, spacing: 4) {
-                    Text(verbatim: title)
+                    Text(verbatim: viewData.title)
                         .font(.headline)
                         .fontWeight(.semibold)
                         .foregroundStyle(Color.primary)
@@ -65,7 +69,7 @@ struct PopularTokenRowView: View {
                         .multilineTextAlignment(.leading)
                         .frame(maxWidth: .infinity, alignment: .leading)
 
-                    Text(verbatim: subtitle)
+                    Text(verbatim: viewData.subtitle)
                         .font(.body)
                         .foregroundStyle(Color.secondary)
                         .multilineTextAlignment(.leading)
@@ -74,15 +78,15 @@ struct PopularTokenRowView: View {
 
                 // Price action
                 VStack(alignment: .trailing, spacing: 4) {
-                    Text(verbatim: price)
+                    Text(verbatim: viewData.price)
                         .font(.headline)
                         .fontWeight(.semibold)
                         .foregroundStyle(Color.primary)
                         .frame(alignment: .leading)
 
-                    Text(verbatim: "\(priceChange > 0 ? "+" : "")\(priceChange)%")
+                    Text(verbatim: "\(viewData.priceChange > 0 ? "+" : "")\(viewData.priceChange)%")
                         .font(.body)
-                        .foregroundStyle(priceChange > 0 ? Color.green : Color.red)
+                        .foregroundStyle(viewData.priceChange > 0 ? Color.green : Color.red)
                 }
             }
         }
@@ -92,11 +96,14 @@ struct PopularTokenRowView: View {
 
 #Preview {
     PopularTokenRowView(
-        imageURL: nil,
-        title: "BTC",
-        subtitle: "Bitcoin",
-        price: "$55,735.00",
-        priceChange: -9.43,
+        viewData: PopularTokenViewData(
+            id: "1",
+            imageURL: nil,
+            title: "BTC",
+            subtitle: "Bitcoin",
+            price: "$55,735.00",
+            priceChange: -9.43
+        ),
         didTap: {}
     )
 }

@@ -17,4 +17,16 @@ final class PopularTokenRowViewModel {
         case success(UIImage)
         case failure
     }
+
+    // MARK: - Public APIs
+
+    func loadIcon(from url: URL?) {
+        guard let url else {
+            return
+        }
+
+        iconState = .loading
+
+        // TODO:
+    }
 }
