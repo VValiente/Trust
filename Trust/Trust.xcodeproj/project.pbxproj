@@ -11,9 +11,9 @@
 		3E658C0A2C633C0D00CADF0E /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E658C092C633C0D00CADF0E /* NetworkError.swift */; };
 		3E658C0D2C6343D100CADF0E /* CryptoDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E658C0C2C6343D100CADF0E /* CryptoDTO.swift */; };
 		3E658C0F2C63463500CADF0E /* BackendServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E658C0E2C63463500CADF0E /* BackendServiceProtocol.swift */; };
+		3E658C132C634B2500CADF0E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E658C122C634B2500CADF0E /* HomeViewModel.swift */; };
 		3E658C1C2C63582300CADF0E /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E658C1B2C63582300CADF0E /* MockURLProtocol.swift */; };
 		3E658C1E2C63585C00CADF0E /* BackendServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E658C1D2C63585C00CADF0E /* BackendServiceTests.swift */; };
-		3E658C132C634B2500CADF0E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E658C122C634B2500CADF0E /* HomeViewModel.swift */; };
 		3E658C262C6369B800CADF0E /* PopularTokenViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E658C252C6369B800CADF0E /* PopularTokenViewData.swift */; };
 		3E658C2A2C63743600CADF0E /* PriceFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E658C292C63743600CADF0E /* PriceFormatter.swift */; };
 		3E8AEF142C61FEC5005D0B87 /* TrustApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AEF132C61FEC5005D0B87 /* TrustApp.swift */; };
@@ -77,9 +77,9 @@
 		3E658C092C633C0D00CADF0E /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		3E658C0C2C6343D100CADF0E /* CryptoDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoDTO.swift; sourceTree = "<group>"; };
 		3E658C0E2C63463500CADF0E /* BackendServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendServiceProtocol.swift; sourceTree = "<group>"; };
+		3E658C122C634B2500CADF0E /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		3E658C1B2C63582300CADF0E /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
 		3E658C1D2C63585C00CADF0E /* BackendServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendServiceTests.swift; sourceTree = "<group>"; };
-		3E658C122C634B2500CADF0E /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		3E658C252C6369B800CADF0E /* PopularTokenViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTokenViewData.swift; sourceTree = "<group>"; };
 		3E658C292C63743600CADF0E /* PriceFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceFormatter.swift; sourceTree = "<group>"; };
 		3E8AEF102C61FEC5005D0B87 /* Trust.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trust.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -168,15 +168,6 @@
 			path = Crypto;
 			sourceTree = "<group>";
 		};
-		3E658C1A2C63580200CADF0E /* Backend */ = {
-			isa = PBXGroup;
-			children = (
-				3E658C1D2C63585C00CADF0E /* BackendServiceTests.swift */,
-				3E658C1B2C63582300CADF0E /* MockURLProtocol.swift */,
-			);
-			path = Backend;
-			sourceTree = "<group>";
-		};
 		3E658C192C6357C100CADF0E /* Frontend */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +176,15 @@
 				3E8AEF5F2C620E0A005D0B87 /* Navigation */,
 			);
 			path = Frontend;
+			sourceTree = "<group>";
+		};
+		3E658C1A2C63580200CADF0E /* Backend */ = {
+			isa = PBXGroup;
+			children = (
+				3E658C1D2C63585C00CADF0E /* BackendServiceTests.swift */,
+				3E658C1B2C63582300CADF0E /* MockURLProtocol.swift */,
+			);
+			path = Backend;
 			sourceTree = "<group>";
 		};
 		3E8AEF072C61FEC5005D0B87 = {

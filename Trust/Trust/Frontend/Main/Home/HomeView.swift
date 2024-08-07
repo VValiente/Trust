@@ -74,29 +74,15 @@ struct HomeView: View {
 
             // List of Popular Tokens
             Section {
-                PopularTokenRowView(
-                    viewData: PopularTokenViewData(
-                        id: "1",
-                        imageURL: nil,
-                        title: "BTC",
-                        subtitle: "Bitcoin",
-                        price: "$55,735.00",
-                        priceChange: -9.43
-                    ),
-                    didTap: {}
-                )
+                if case let .success(popularTokens) = viewModel.popularTokensRequestState {
+                    ForEach(popularTokens, id: \.self) { tokenViewData in
+                        PopularTokenRowView(
+                            viewData: tokenViewData) {
+                                // Handle taps on row
+                            }
+                    }
+                }
 
-                PopularTokenRowView(
-                    viewData: PopularTokenViewData(
-                        id: "1",
-                        imageURL: nil,
-                        title: "BTC",
-                        subtitle: "Bitcoin",
-                        price: "$55,735.00",
-                        priceChange: -9.43
-                    ),
-                    didTap: {}
-                )
             } header: {
                 Text(LocalizedStringKey("homeView_popularTokens_sectionTitle"))
                     .font(.title3)
