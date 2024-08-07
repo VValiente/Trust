@@ -13,6 +13,7 @@
 		3E658C0F2C63463500CADF0E /* BackendServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E658C0E2C63463500CADF0E /* BackendServiceProtocol.swift */; };
 		3E658C1C2C63582300CADF0E /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E658C1B2C63582300CADF0E /* MockURLProtocol.swift */; };
 		3E658C1E2C63585C00CADF0E /* BackendServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E658C1D2C63585C00CADF0E /* BackendServiceTests.swift */; };
+		3E658C132C634B2500CADF0E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E658C122C634B2500CADF0E /* HomeViewModel.swift */; };
 		3E8AEF142C61FEC5005D0B87 /* TrustApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AEF132C61FEC5005D0B87 /* TrustApp.swift */; };
 		3E8AEF162C61FEC5005D0B87 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AEF152C61FEC5005D0B87 /* SplashScreenView.swift */; };
 		3E8AEF182C61FEC6005D0B87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E8AEF172C61FEC6005D0B87 /* Assets.xcassets */; };
@@ -47,9 +48,9 @@
 		3E8AEF7D2C621E0A005D0B87 /* WalletButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AEF7C2C621E0A005D0B87 /* WalletButton.swift */; };
 		3E8AEF822C6226F8005D0B87 /* CreateWalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AEF812C6226F8005D0B87 /* CreateWalletView.swift */; };
 		3E8AEF842C622716005D0B87 /* AddWalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AEF832C622716005D0B87 /* AddWalletView.swift */; };
-		3E9972BE2C62404800B9C058 /* EdgeInsets+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9972BD2C62404800B9C058 /* EdgeInsets+Extensions.swift */; };
 		3E8AEF872C62337A005D0B87 /* PopularTokenRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AEF862C62337A005D0B87 /* PopularTokenRowView.swift */; };
 		3E8AEF892C6233F2005D0B87 /* PopularTokenRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AEF882C6233F2005D0B87 /* PopularTokenRowViewModel.swift */; };
+		3E9972BE2C62404800B9C058 /* EdgeInsets+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9972BD2C62404800B9C058 /* EdgeInsets+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		3E658C0E2C63463500CADF0E /* BackendServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendServiceProtocol.swift; sourceTree = "<group>"; };
 		3E658C1B2C63582300CADF0E /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
 		3E658C1D2C63585C00CADF0E /* BackendServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendServiceTests.swift; sourceTree = "<group>"; };
+		3E658C122C634B2500CADF0E /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		3E8AEF102C61FEC5005D0B87 /* Trust.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trust.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E8AEF132C61FEC5005D0B87 /* TrustApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrustApp.swift; sourceTree = "<group>"; };
 		3E8AEF152C61FEC5005D0B87 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
@@ -113,9 +115,9 @@
 		3E8AEF7C2C621E0A005D0B87 /* WalletButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletButton.swift; sourceTree = "<group>"; };
 		3E8AEF812C6226F8005D0B87 /* CreateWalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWalletView.swift; sourceTree = "<group>"; };
 		3E8AEF832C622716005D0B87 /* AddWalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWalletView.swift; sourceTree = "<group>"; };
-		3E9972BD2C62404800B9C058 /* EdgeInsets+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EdgeInsets+Extensions.swift"; sourceTree = "<group>"; };
 		3E8AEF862C62337A005D0B87 /* PopularTokenRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTokenRowView.swift; sourceTree = "<group>"; };
 		3E8AEF882C6233F2005D0B87 /* PopularTokenRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTokenRowViewModel.swift; sourceTree = "<group>"; };
+		3E9972BD2C62404800B9C058 /* EdgeInsets+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EdgeInsets+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -262,6 +264,7 @@
 			children = (
 				3E8AEF662C621011005D0B87 /* HomeDestination.swift */,
 				3E8AEF4A2C620340005D0B87 /* HomeView.swift */,
+				3E658C122C634B2500CADF0E /* HomeViewModel.swift */,
 				3E8AEF852C623343005D0B87 /* PopularToken */,
 				3E8AEF682C62103E005D0B87 /* Settings */,
 				3E8AEF802C6226E0005D0B87 /* Wallet */,
@@ -529,6 +532,7 @@
 				3E8AEF512C62036A005D0B87 /* SwapView.swift in Sources */,
 				3E8AEF462C6201E3005D0B87 /* TabType.swift in Sources */,
 				3E8AEF792C6219C0005D0B87 /* PreferencesView.swift in Sources */,
+				3E658C132C634B2500CADF0E /* HomeViewModel.swift in Sources */,
 				3E8AEF412C62019A005D0B87 /* RootViewContentManager.swift in Sources */,
 				3E9972BE2C62404800B9C058 /* EdgeInsets+Extensions.swift in Sources */,
 				3E8AEF712C6213A1005D0B87 /* SettingsRowView.swift in Sources */,

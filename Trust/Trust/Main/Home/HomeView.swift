@@ -14,6 +14,7 @@ struct HomeView: View {
 
     // MARK: - Private Properties
 
+    @State private var viewModel = HomeViewModel()
     @State private var showCreateWalletView = false
     @State private var showAddWalletView = false
 
@@ -130,6 +131,9 @@ struct HomeView: View {
                 case .settings:
                     SettingsView(navigator: navigator)
             }
+        }
+        .task {
+            viewModel.fetchPopularTokens()
         }
     }
 }
