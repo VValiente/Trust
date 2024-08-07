@@ -14,6 +14,7 @@ struct HomeView: View {
 
     // MARK: - Private Properties
 
+    @State private var viewModel = HomeViewModel()
     @State private var showCreateWalletView = false
     @State private var showAddWalletView = false
 
@@ -73,27 +74,15 @@ struct HomeView: View {
 
             // List of Popular Tokens
             Section {
-                PopularTokenRowView(
-                    imageURL: nil,
-                    title: "BTC",
-                    subtitle: "Bitcoin",
-                    price: "$55,735.00",
-                    priceChange: 9.43,
-                    didTap: {
-                        print("1")
+                if case let .success(popularTokens) = viewModel.popularTokensRequestState {
+                    ForEach(popularTokens, id: \.self) { tokenViewData in
+                        PopularTokenRowView(
+                            viewData: tokenViewData) {
+                                // Handle taps on row
+                            }
                     }
-                )
+                }
 
-                PopularTokenRowView(
-                    imageURL: nil,
-                    title: "BTC",
-                    subtitle: "Bitcoin",
-                    price: "$55,735.00",
-                    priceChange: -9.43,
-                    didTap: {
-                        print("2")
-                    }
-                )
             } header: {
                 Text(LocalizedStringKey("homeView_popularTokens_sectionTitle"))
                     .font(.title3)
@@ -130,6 +119,9 @@ struct HomeView: View {
                 case .settings:
                     SettingsView(navigator: navigator)
             }
+        }
+        .task {
+            viewModel.fetchPopularTokens()
         }
     }
 }
