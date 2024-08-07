@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E658C082C6336A400CADF0E /* BackendService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E658C072C6336A400CADF0E /* BackendService.swift */; };
 		3E658C0A2C633C0D00CADF0E /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E658C092C633C0D00CADF0E /* NetworkError.swift */; };
 		3E658C0D2C6343D100CADF0E /* CryptoDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E658C0C2C6343D100CADF0E /* CryptoDTO.swift */; };
+		3E658C0F2C63463500CADF0E /* BackendServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E658C0E2C63463500CADF0E /* BackendServiceProtocol.swift */; };
 		3E8AEF142C61FEC5005D0B87 /* TrustApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AEF132C61FEC5005D0B87 /* TrustApp.swift */; };
 		3E8AEF162C61FEC5005D0B87 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AEF152C61FEC5005D0B87 /* SplashScreenView.swift */; };
 		3E8AEF182C61FEC6005D0B87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E8AEF172C61FEC6005D0B87 /* Assets.xcassets */; };
@@ -66,8 +68,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3E658C072C6336A400CADF0E /* BackendService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendService.swift; sourceTree = "<group>"; };
 		3E658C092C633C0D00CADF0E /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		3E658C0C2C6343D100CADF0E /* CryptoDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoDTO.swift; sourceTree = "<group>"; };
+		3E658C0E2C63463500CADF0E /* BackendServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendServiceProtocol.swift; sourceTree = "<group>"; };
 		3E8AEF102C61FEC5005D0B87 /* Trust.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trust.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E8AEF132C61FEC5005D0B87 /* TrustApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrustApp.swift; sourceTree = "<group>"; };
 		3E8AEF152C61FEC5005D0B87 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
@@ -138,6 +142,8 @@
 		3E658C062C63366900CADF0E /* Backend */ = {
 			isa = PBXGroup;
 			children = (
+				3E658C072C6336A400CADF0E /* BackendService.swift */,
+				3E658C0E2C63463500CADF0E /* BackendServiceProtocol.swift */,
 				3E658C092C633C0D00CADF0E /* NetworkError.swift */,
 				3E658C0B2C6343C000CADF0E /* Crypto */,
 			);
@@ -491,6 +497,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E8AEF482C6202D1005D0B87 /* RootViewContentProtocol.swift in Sources */,
+				3E658C0F2C63463500CADF0E /* BackendServiceProtocol.swift in Sources */,
 				3E8AEF752C621855005D0B87 /* Constants.swift in Sources */,
 				3E8AEF6E2C621284005D0B87 /* UINavigationController+Extensions.swift in Sources */,
 				3E8AEF162C61FEC5005D0B87 /* SplashScreenView.swift in Sources */,
@@ -499,6 +506,7 @@
 				3E8AEF6A2C621048005D0B87 /* SettingsView.swift in Sources */,
 				3E8AEF7B2C621DA5005D0B87 /* CGFloat+Extensions.swift in Sources */,
 				3E8AEF732C6213F9005D0B87 /* LocalizedStringKey+Extensions.swift in Sources */,
+				3E658C082C6336A400CADF0E /* BackendService.swift in Sources */,
 				3E658C0A2C633C0D00CADF0E /* NetworkError.swift in Sources */,
 				3E8AEF4E2C62035A005D0B87 /* EarnView.swift in Sources */,
 				3E8AEF5C2C6204E7005D0B87 /* SplashScreenViewModel.swift in Sources */,
