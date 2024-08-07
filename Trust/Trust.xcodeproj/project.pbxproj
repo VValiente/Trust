@@ -22,6 +22,7 @@
 		3E658C342C637FC300CADF0E /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E658C332C637FC300CADF0E /* AppState.swift */; };
 		3E658C362C63804100CADF0E /* TopCryptoStateDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E658C352C63804100CADF0E /* TopCryptoStateDelegate.swift */; };
 		3E658C392C6381E500CADF0E /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E658C382C6381E500CADF0E /* HomeViewModelTests.swift */; };
+		3E658C3B2C63834900CADF0E /* MockBackendService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E658C3A2C63834900CADF0E /* MockBackendService.swift */; };
 		3E8AEF142C61FEC5005D0B87 /* TrustApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AEF132C61FEC5005D0B87 /* TrustApp.swift */; };
 		3E8AEF162C61FEC5005D0B87 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AEF152C61FEC5005D0B87 /* SplashScreenView.swift */; };
 		3E8AEF182C61FEC6005D0B87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E8AEF172C61FEC6005D0B87 /* Assets.xcassets */; };
@@ -94,6 +95,7 @@
 		3E658C332C637FC300CADF0E /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		3E658C352C63804100CADF0E /* TopCryptoStateDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCryptoStateDelegate.swift; sourceTree = "<group>"; };
 		3E658C382C6381E500CADF0E /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
+		3E658C3A2C63834900CADF0E /* MockBackendService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MockBackendService.swift; path = TrustTests/MockBackendService.swift; sourceTree = SOURCE_ROOT; };
 		3E8AEF102C61FEC5005D0B87 /* Trust.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trust.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E8AEF132C61FEC5005D0B87 /* TrustApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrustApp.swift; sourceTree = "<group>"; };
 		3E8AEF152C61FEC5005D0B87 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
@@ -272,6 +274,7 @@
 		3E8AEF232C61FEC6005D0B87 /* TrustTests */ = {
 			isa = PBXGroup;
 			children = (
+				3E658C3A2C63834900CADF0E /* MockBackendService.swift */,
 				3E8AEF242C61FEC6005D0B87 /* TrustTests.swift */,
 				3E658C1A2C63580200CADF0E /* Backend */,
 				3E658C372C6381D300CADF0E /* Frontend */,
@@ -621,6 +624,7 @@
 			files = (
 				3E658C1E2C63585C00CADF0E /* BackendServiceTests.swift in Sources */,
 				3E658C392C6381E500CADF0E /* HomeViewModelTests.swift in Sources */,
+				3E658C3B2C63834900CADF0E /* MockBackendService.swift in Sources */,
 				3E8AEF252C61FEC6005D0B87 /* TrustTests.swift in Sources */,
 				3E658C1C2C63582300CADF0E /* MockURLProtocol.swift in Sources */,
 			);
