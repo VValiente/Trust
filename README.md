@@ -14,4 +14,6 @@ This is a demo project build in Xcode 15.1 with minimum target of iOS 17.0.
 <img width="800" alt="Screenshot 2024-08-07 at 23 12 00" src="https://github.com/user-attachments/assets/7cc03127-8fdd-43e8-9089-a75b8e96ea55">
 
 
-  
+## To Run the Xcode Project
+- Make sure to clone the feature branch `feat/006-add-an-app-state`. It has the latest file changes.
+
