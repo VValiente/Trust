@@ -1,3 +1,5 @@
+_REMINDER: Please keep in mind that this was written back in 2024 and isn't a 1:1 reflection of my current work. Much have changed since then, for the better._ 
+
 # Trust
 
 This is a demo project build in Xcode 15.1 with minimum target of iOS 17.0. 
