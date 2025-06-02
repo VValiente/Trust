@@ -2,7 +2,7 @@ _REMINDER: Please keep in mind that this was written back in 2024 and isn't a 1:
 
 # Trust
 
-This is a demo project build in Xcode 15.1 with minimum target of iOS 17.0. 
+This is a demo project built in Xcode 15.1+ with minimum target of iOS 17.0. 
 **IMPORTANT**: This is a partial implementation of the Trust Wallet for demo purposes only.
 
 <img width="320" alt="TrustWalletDemo" src="https://github.com/user-attachments/assets/67c1c9a9-1c4f-463c-8e97-e58545ae72ba">
